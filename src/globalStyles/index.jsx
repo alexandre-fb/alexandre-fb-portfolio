@@ -60,19 +60,21 @@ table {
 
 //=========GLOBAL STYLES==========
 * {
-   font-family: 'Roboto', sans-serif;
+   
 }
 
-html {
+html{
     background-color: var(--very-dark-purple);
 	width: 100%;
 	height: 100%;
+	font-family: 'Roboto', sans-serif;
 }
 
 body {
 	max-width: 1440px;
 	margin: 0 auto;
 	color: #fff;
+	
 }
 
 `;
