@@ -1,11 +1,12 @@
+import { GlobalStyle } from "./globalStyles";
 
 function App() {
-
   return (
-   <>
-    <h1>Porfolio</h1>
-   </>
-  )
+    <>
+      <GlobalStyle />
+        <h1>Porfolio</h1>
+    </>
+  );
 }
 
-export default App
+export default App;
