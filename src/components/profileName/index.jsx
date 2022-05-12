@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const ProfileName = () => {
+export const ProfileName = ({ fontSize, textAlign }) => {
   return (
-    <H1>
+    <H1 fontSize={fontSize} textAlign={textAlign}>
       Alexandre <br />
       Bisognin
     </H1>
@@ -10,8 +10,7 @@ export const ProfileName = () => {
 };
 
 const H1 = styled.h1`
-  font-size: 5rem;
+  font-size: ${({fontSize}) => fontSize};
   font-weight: 500;
-  text-align: right;
-  line-height: 6.5rem;
+  text-align: ${(textAlign) => textAlign};
 `;
