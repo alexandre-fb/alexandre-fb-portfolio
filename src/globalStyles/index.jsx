@@ -36,6 +36,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	box-sizing: border-box;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
