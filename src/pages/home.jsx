@@ -1,10 +1,9 @@
-import { Panel } from "../components/panel"
-
+import { Panel } from "../components/panel";
 
 export const Home = () => {
-    return (
-        <>
-            <Panel />
-        </>
-    )
-}
+  return (
+    <>
+      <Panel />
+    </>
+  );
+};

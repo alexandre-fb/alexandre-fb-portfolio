@@ -1,20 +1,19 @@
 import { Container } from "./styles";
+import { ProfileName } from "../profileName";
+import { ProfilePosition } from "../profilePosition";
+import { Divider } from "../divider";
+import { ProfileImage } from "../profileImage";
 
 export const Panel = () => {
   return (
     <Container>
-      <h1>
-        Alexandre <br />
-        Bisognin
-      </h1>
-      <h2>
-        Dev FrontEnd<span>(Jr)</span>
-      </h2>
-      <div></div>
-      <img
-        src="..\src\assets\images\alexandre-bisognin-image.png"
-        alt="Alexandre Bisognin"
-      />
+      <ProfileName />
+      <Divider />
+      <div>
+        <ProfileImage />
+      </div>
+      <ProfilePosition />
     </Container>
   );
 };
+
