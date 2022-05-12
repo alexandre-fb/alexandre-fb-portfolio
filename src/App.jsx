@@ -1,10 +1,11 @@
 import { GlobalStyle } from "./globalStyles";
+import { AppRoutes } from "./pages/Routes";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-        <h1>Porfolio</h1>
+      <AppRoutes />
     </>
   );
 }

@@ -5,6 +5,8 @@ export const GlobalStyle = createGlobalStyle`
 //=========VARIABLES COLORS==========
 :root{
 	--very-dark-purple: #191522;
+	--light-green: #70B966;
+	--yellow: #FFCC03;
 }
 
 //=========RESET ERIC MAYER==========
@@ -33,6 +35,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -60,19 +63,21 @@ table {
 
 //=========GLOBAL STYLES==========
 * {
-   font-family: 'Roboto', sans-serif;
+   
 }
 
-html {
+html{
     background-color: var(--very-dark-purple);
 	width: 100%;
 	height: 100%;
+	font-family: 'Roboto', sans-serif;
 }
 
 body {
 	max-width: 1440px;
 	margin: 0 auto;
 	color: #fff;
+	
 }
 
 `;
