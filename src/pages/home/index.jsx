@@ -1,7 +1,10 @@
-import { Container } from "./styles";
+import styled from "styled-components";
+
+import { ContainerPage } from "../../components/ContainerPage";
 import { Header } from "../../components/Header";
 import { Panel } from "../../components/panel";
 import { Footer } from "../../components/Footer";
+
 
 export const Home = () => {
   return (
@@ -14,3 +17,6 @@ export const Home = () => {
     </Container>
   );
 };
+
+const Container = styled(ContainerPage)`
+`
