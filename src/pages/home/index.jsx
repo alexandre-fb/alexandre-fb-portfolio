@@ -1,16 +1,18 @@
 import styled from "styled-components";
 import { Header } from "../../components/Header";
-import { Menu } from "../../components/menu";
-import { Panel } from "../../components/panel"
+import { Panel } from "../../components/panel";
+import { Footer } from "../../components/Footer";
 
 export const Home = () => {
   return (
     <Container>
       <Header />
+
       <main>
         <Panel />
       </main>
-      {/* <Footer /> */}
+
+      <Footer />
     </Container>
   );
 };
