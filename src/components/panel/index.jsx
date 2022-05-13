@@ -7,7 +7,7 @@ import { ProfileImage } from "../profileImage";
 export const Panel = () => {
   return (
     <Container>
-      <ProfileName />
+      <ProfileName fontSize='5rem' textAlign='right'/>
       <Divider />
       <div>
         <ProfileImage />
