@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+
+width: 200px;
   display: grid;
   grid-template-rows: auto;
   justify-content: center;
@@ -25,10 +27,10 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     width: 256px;
+    background-color: red;
 
     & :first-child {
       position: absolute;
-      width: 100%;
     }
   }
   & :nth-child(4) {

@@ -8,7 +8,7 @@ import { ThemeButton } from "../buttons/themeButton";
 export const Header = () => {
   return (
     <Container>
-      <div>
+
         <Link to="/">
           <ProfileName />
         </Link>
@@ -19,7 +19,7 @@ export const Header = () => {
           <SocialLinks />
           <ThemeButton />
         </div>
-      </div>
+        
     </Container>
   );
 };

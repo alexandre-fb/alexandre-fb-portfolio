@@ -9,14 +9,16 @@ export const Footer = () => {
 const P = styled.p`
 
         font-size: 0.8rem;
+        margin:20px 0;
+        color: #8c8c8c;
 
         a{
             cursor: pointer;
+            color: #8c8c8c;
+            
 
             &:hover {
                 color: var(--light-green)
             }
         }
-        
-
 `
