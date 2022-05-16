@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from './home'
-import { Projetos } from "./projetos";
+import { Home } from "./home";
+import { Projetos } from "./Projetos";
 import { Skills } from "./skills";
 import { Sobre } from "./sobre";
+import { Contato } from "./Contato";
 export const AppRoutes = () => {
   return (
     <BrowserRouter>
@@ -11,7 +12,7 @@ export const AppRoutes = () => {
         <Route exact path="/sobre" element={<Sobre />} />
         <Route exact path="/skills" element={<Skills />} />
         <Route exact path="/projetos" element={<Projetos />} />
-        <Route exact path="/contato" element={<Projetos />} />
+        <Route exact path="/contato" element={<Contato />} />
       </Routes>
     </BrowserRouter>
   );

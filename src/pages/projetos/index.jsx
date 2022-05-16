@@ -1,10 +1,17 @@
-import { Menu } from "../../components/menu";
+import styled from "styled-components";
+import { ContainerPage } from "../../components/ContainerPage";
+import { Header } from "../../components/Header";
+import { Footer } from "../../components/Footer";
+import { MainProjects } from "../../components/MainProjects";
 
 export const Projetos = () => {
   return (
-    <>
-      <Menu />
-      <h1 style={{padding: '200px'}}>Projetos</h1>
-    </>
+    <Container>
+      <Header />
+      <MainProjects />
+      <Footer />
+    </Container>
   );
 };
+
+const Container = styled(ContainerPage)``;

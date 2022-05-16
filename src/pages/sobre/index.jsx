@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ContainerPage } from "../../components/ContainerPage";
 import { Header } from "../../components/Header";
-import { MainSobre } from "../../components/MainSobre";
+import { MainSobre } from "../../components";
 import { Footer } from "../../components/Footer";
 
 
