@@ -1,8 +1,8 @@
 import { Container } from "./styles";
-import { ProfileName } from "../profileName";
-import { ProfilePosition } from "../profilePosition";
-import { Divider } from "../divider";
-import { ProfileImage } from "../profileImage";
+import { ProfileName } from "../ProfileName";
+import { ProfilePosition } from "../ProfilePosition";
+import { Divider } from "../Divider";
+import { ProfileImage } from "../ProfileImage";
 
 export const Panel = () => {
   return (

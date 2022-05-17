@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { GitHubIconLink } from "../gitHub";
-import { LinkedinIconLink } from "../linkedin";
+import { GitHubIconLink } from "../GitHub";
+import { LinkedinIconLink } from "../Linkedin";
 
 export const SocialLinks = () => {
   return (

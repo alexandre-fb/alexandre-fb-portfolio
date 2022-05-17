@@ -1,9 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "./home";
+import { Home } from "./Home";
 import { Projetos } from "./Projetos";
-import { Skills } from "./skills";
-import { Sobre } from "./sobre";
+import { Skills } from "./Skills";
+import { Sobre } from "./Sobre";
 import { Contato } from "./Contato";
+
 export const AppRoutes = () => {
   return (
     <BrowserRouter>

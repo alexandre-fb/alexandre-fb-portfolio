@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { Container } from './styles'
-import { ProfileName } from "../profileName";
-import { Menu } from "../menu";
-import { SocialLinks } from "../linksIcons/allSocialLinksTogether";
-import { ThemeButton } from "../buttons/themeButton";
+import { ProfileName } from "../ProfileName";
+import { Menu } from "../Menu";
+import { SocialLinks } from "../linksIcons/SocialLinksTogether";
+import { ThemeButton } from "../buttons/ThemeButton";
 
 export const Header = () => {
   return (

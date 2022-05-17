@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { ContainerPage } from "../../components/ContainerPage";
 import { Header } from "../../components/Header";
-import { Panel } from "../../components/panel";
+import { Panel } from "../../components/Panel";
 import { Footer } from "../../components/Footer";
 
 

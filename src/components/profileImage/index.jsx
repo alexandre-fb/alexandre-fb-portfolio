@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const ProfileImage = () => {
   return (
     <Img
-      src="..\src\assets\images\alexandre-bisognin-image.jpg"
-      alt="Alexandre Bisognin"
+      src="..\src\assets\images\profile-image.jpg"
+      alt="Profile Image"
     ></Img>
   );
 };
