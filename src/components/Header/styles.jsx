@@ -13,8 +13,6 @@ export const Container = styled.header`
   //==========Logo==========
 
   & > :nth-child(1) {
-    display: none;
-
     position: absolute;
     left: 0;
   }

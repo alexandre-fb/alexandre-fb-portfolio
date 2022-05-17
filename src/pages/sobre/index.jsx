@@ -8,7 +8,7 @@ import { Footer } from "../../components/Footer";
 export const Sobre = () => {
   return (
     <Container>
-      <Header />
+      <Header hiddenSocialLinks={true} />
       <MainSobre />
       <Footer />
     </Container>

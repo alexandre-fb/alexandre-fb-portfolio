@@ -45,11 +45,10 @@ const Container = styled.main`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1024px;
+  max-width: 900px;
   margin: 0 auto;
 
   ${ContainerData} {
-    max-width: 900px;
     display: flex;
     gap: 40px;
     margin: 0 auto;

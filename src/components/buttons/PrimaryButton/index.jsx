@@ -3,12 +3,14 @@ import styled from "styled-components";
 export const PrimaryButton = styled.button`
   background: none;
   border: 1px solid var(--light-green);
-  border-radius: 40px;
   padding: 10px 20px;
+  border-radius: 40px;
   color: var(--light-green);
-  transition: 300ms ease-in-out;
-  transform: scale(1);
+
   cursor: pointer;
+
+  transform: scale(1);
+  transition: 300ms ease-in-out;
 
   &:hover {
     background-color: var(--light-green);

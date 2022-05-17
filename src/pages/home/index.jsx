@@ -9,7 +9,7 @@ import { Footer } from "../../components/Footer";
 export const Home = () => {
   return (
     <Container>
-      <Header />
+      <Header hiddenLogo={true}/>
       <main>
         <Panel />
       </main>
