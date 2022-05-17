@@ -1,17 +1,20 @@
 import styled from "styled-components";
 import { SocialLinks } from "../../linksIcons/SocialLinksTogether";
 import { ProfileImage } from "../../ProfileImage";
+import { TitlePage } from "../../TitlePage";
+import { PrimaryButton } from "../../buttons/PrimaryButton";
 
 export const MainSobre = () => {
   return (
     <Container>
-      <h2>Sobre</h2>
+      <TitlePage>Sobre</TitlePage>
+
       <ContainerData>
-        <div>
+        <ImageAndLinks>
           <ProfileImage />
           <SocialLinks />
-        </div>
-        <div>
+        </ImageAndLinks>
+        <TextAndButton>
           <h3>Olá :)</h3>
           <h4>sou Alexandre Bisognin, bem-vindo ao meu portfólio.</h4>
           <p>
@@ -24,20 +27,65 @@ export const MainSobre = () => {
             abaixo o meu currículo completo, onde pode encontrar minhas
             experiências e formações profissionais.
           </p>
-          <button>Currículo completo</button>
-        </div>
+
+          <a href="#">
+            <PrimaryButton>Currículo completo</PrimaryButton>
+          </a>
+        </TextAndButton>
       </ContainerData>
     </Container>
   );
 };
 
 const ContainerData = styled.div``;
+const ImageAndLinks = styled.div``;
+const TextAndButton = styled.div``;
 
 const Container = styled.main`
-  h2{
-    font-family: 'Fira Code', monospace;
-    color: 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+
+  ${ContainerData} {
+    max-width: 900px;
+    display: flex;
+    gap: 40px;
+    margin: 0 auto;
+
+    ${ImageAndLinks} {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    ${TextAndButton} {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      position: relative;
+
+      width: 88%;
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        line-height: 1.4rem;
+      }
+
+      a {
+        margin-top: 20px;
+        width: fit-content;
+      }
+    }
   }
 `;
-
-
