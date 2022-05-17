@@ -2,10 +2,7 @@ import styled from "styled-components";
 
 export const ProfileImage = () => {
   return (
-    <Img
-      src="..\src\assets\images\profile-image.jpg"
-      alt="Profile Image"
-    ></Img>
+    <Img src="..\src\assets\images\profile-image.jpg" alt="Profile Image"></Img>
   );
 };
 
