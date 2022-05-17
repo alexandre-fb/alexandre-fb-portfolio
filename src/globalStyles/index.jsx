@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
 	--very-dark-purple: #191522;
 	--light-green: #70B966;
 	--yellow: #FFCC03;
+	--grey: #7B7B7B;
 }
 
 //=========RESET ERIC MAYER==========
