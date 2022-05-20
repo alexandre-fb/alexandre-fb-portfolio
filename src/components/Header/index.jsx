@@ -1,27 +1,33 @@
-import { Link } from "react-router-dom";
-import { Container } from './styles'
-import { ProfileName } from "../ProfileName";
-import { Menu } from "../Menu";
+import {
+  Container,
+  StyledLink,
+  SocialLinksAndThemeButton,
+  IconMenuMobile,
+  MenuArea,
+} from "./styles";
+import { ProfileName } from "../profileData/ProfileName";
 import { SocialLinks } from "../linksIcons/SocialLinksTogether";
 import { ThemeButton } from "../buttons/ThemeButton";
-
-export const Header = () => {
+import { MenuMobile } from "../menus/MenuMobile";
+import { Menu } from "../menus/DesktopMenu";
+export const Header = ({ hiddenSocialLinks, hiddenLogo }) => {
   return (
     <Container>
+      <IconMenuMobile />
 
-        <Link to="/">
-          <ProfileName />
-        </Link>
+      <StyledLink to="/">
+        {!hiddenLogo && <ProfileName fontSize={"1.2rem"} />}
+      </StyledLink>
 
+      <MenuArea>
         <Menu />
+      </MenuArea>
+      <h1>Ola</h1>
 
-        <div>
-          <SocialLinks />
-          <ThemeButton />
-        </div>
-        
+      <SocialLinksAndThemeButton>
+        {!hiddenSocialLinks && <SocialLinks />}
+        <ThemeButton />
+      </SocialLinksAndThemeButton>
     </Container>
   );
 };
-
-

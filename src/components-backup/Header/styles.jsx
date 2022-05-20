@@ -1,13 +1,4 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { HiMenu } from "react-icons/hi";
-
-export const MenuArea = styled.div``
-export const StyledLink = styled(Link)``;
-export const SocialLinksAndThemeButton = styled.div``;
-export const IconMenuMobile = styled(HiMenu)`
-display: none;
-`;
 
 export const Container = styled.header`
   width: 100%;
@@ -19,19 +10,29 @@ export const Container = styled.header`
   justify-content: center;
   align-items: center;
 
-  ${StyledLink} {
+  //==========Logo==========
+
+  & > :nth-child(1) {
+    display: none;
+
     position: absolute;
     left: 0;
   }
 
-  ${SocialLinksAndThemeButton} {
+  //==========Containet Links and Theme button==========
+
+  & > :nth-child(3) {
     position: absolute;
     right: 0;
 
     display: flex;
     gap: 10px;
     align-items: center;
+
+    //=========Social Links=========
+
+    & > :first-child {
+      display: flex;
+    }
   }
-
-
 `;

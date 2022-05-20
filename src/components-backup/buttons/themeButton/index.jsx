@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { BsSunFill } from "react-icons/bs";
-export const ThemeButton = ({ size }) => {
+export const ThemeButton = () => {
   return (
     <Button>
-      <BsSunFill size={ size } />
+      <BsSunFill />
     </Button>
   );
 };
@@ -21,6 +21,6 @@ const Button = styled.button`
 
   svg {
     color: var(--yellow);
-    font-size: ${ ({ size }) => size };
+    font-size: 1.7rem;
   }
 `;

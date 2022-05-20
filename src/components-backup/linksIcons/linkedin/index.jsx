@@ -1,17 +1,17 @@
 import styled from "styled-components";
 import { FaLinkedin } from 'react-icons/fa'
 
-export const LinkedinIconLink = ({ size }) => {
+export const LinkedinIconLink = () => {
   return (
     <Container href="https://www.linkedin.com/in/alexandre-fb/" target="_blank">
-     <FaLinkedin size={ size } />
+     <FaLinkedin />
     </Container>
   );
 };
 
 const Container = styled.a`
   svg{
-    font-size: ${({ size }) => size };
+    font-size: 1.5rem;
     transition: 300ms;
   }
 

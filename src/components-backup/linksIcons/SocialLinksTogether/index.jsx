@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { GitHubIconLink } from "../GitHub";
 import { LinkedinIconLink } from "../Linkedin";
 
-export const SocialLinks = ({ size }) => {
+export const SocialLinks = () => {
   return (
     <Container>
-      <LinkedinIconLink size={size} />
-      <GitHubIconLink size={size} />
+      <LinkedinIconLink />
+      <GitHubIconLink />
     </Container>
   );
 };

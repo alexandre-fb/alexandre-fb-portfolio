@@ -1,17 +1,17 @@
 import styled from "styled-components";
 import { FaGithub } from 'react-icons/fa'
 
-export const GitHubIconLink = ({ size }) => {
+export const GitHubIconLink = () => {
   return (
     <Container href="https://github.com/alexandre-fb" target="_blank">
-     <FaGithub size={ size } />
+     <FaGithub />
     </Container>
   );
 };
 
 const Container = styled.a`
   svg{
-    font-size: ${({ size }) => size };
+    font-size: 1.5rem;
     transition: 300ms;
   }
 

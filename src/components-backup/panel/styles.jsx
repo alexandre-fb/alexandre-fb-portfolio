@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
+width: 200px;
   display: grid;
   grid-template-rows: auto;
   justify-content: center;
