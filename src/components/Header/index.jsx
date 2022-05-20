@@ -22,7 +22,8 @@ export const Header = ({ hiddenSocialLinks, hiddenLogo }) => {
       <MenuArea>
         <Menu />
       </MenuArea>
-      <h1>Ola</h1>
+      <h1>ola</h1>
+      
 
       <SocialLinksAndThemeButton>
         {!hiddenSocialLinks && <SocialLinks />}
