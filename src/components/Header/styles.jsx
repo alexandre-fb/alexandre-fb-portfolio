@@ -1,13 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { HiMenu } from "react-icons/hi";
-
-export const MenuArea = styled.div``
-export const StyledLink = styled(Link)``;
-export const SocialLinksAndThemeButton = styled.div``;
-export const IconMenuMobile = styled(HiMenu)`
-display: none;
-`;
+import { mediaSizes } from "../../assets/mediaSizes/mediaSizes";
 
 export const Container = styled.header`
   width: 100%;
@@ -18,20 +11,38 @@ export const Container = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
 
-  ${StyledLink} {
+export const LogoArea = styled(Link)`
+  position: absolute;
+  left: 0;
+
+  @media (max-width: ${mediaSizes.tablet}) {
+    display: none;
+  }
+`;
+
+export const MenuArea = styled.div`
+  position: relative;
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+
+  @media (max-width: ${mediaSizes.tablet}) {
     position: absolute;
     left: 0;
+
+    justify-content: flex-start;
+    align-items: flex-start;
   }
+`;
 
-  ${SocialLinksAndThemeButton} {
-    position: absolute;
-    right: 0;
+export const SocialLinksAndThemeButtonArea = styled.div`
+  position: absolute;
+  right: 0;
 
-    display: flex;
-    gap: 10px;
-    align-items: center;
-  }
-
-
+  display: flex;
+  gap: 10px;
+  align-items: center;
 `;

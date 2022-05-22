@@ -1,12 +1,18 @@
 import styled from "styled-components";
-import { GitHubIconLink } from "../GitHub";
-import { LinkedinIconLink } from "../Linkedin";
+import { SocialIconLink } from "../SocialIconLink";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 export const SocialLinks = ({ size }) => {
+  console.log("size", size);
   return (
     <Container>
-      <LinkedinIconLink size={size} />
-      <GitHubIconLink size={size} />
+      <SocialIconLink href={"https://www.linkedin.com/in/alexandre-fb/"}>
+        <FaLinkedin size={size} />
+      </SocialIconLink>
+      <SocialIconLink href={"https://github.com/alexandre-fb"}>
+        <FaGithub size={size} />
+      </SocialIconLink>
     </Container>
   );
 };

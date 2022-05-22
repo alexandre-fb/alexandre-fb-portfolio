@@ -17,7 +17,7 @@ export const MainSobre = () => {
       <ContainerData>
         <ImageAndLinks>
           <ProfileImage />
-          <SocialLinks />
+          <SocialLinks size={"1.5rem"} />
         </ImageAndLinks>
 
         <TextAndButton>

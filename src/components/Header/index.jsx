@@ -1,34 +1,27 @@
-import {
-  Container,
-  StyledLink,
-  SocialLinksAndThemeButton,
-  IconMenuMobile,
-  MenuArea,
-} from "./styles";
+import { useState } from "react";
+
+import { Container, LogoArea, MenuArea, SocialLinksAndThemeButtonArea } from "./styles";
 import { ProfileName } from "../profileData/ProfileName";
 import { SocialLinks } from "../linksIcons/SocialLinksTogether";
 import { ThemeButton } from "../buttons/ThemeButton";
-import { MenuMobile } from "../menus/MenuMobile";
-import { Menu } from "../menus/DesktopMenu";
+import { Menu } from "../Menu";
+
 export const Header = ({ hiddenSocialLinks, hiddenLogo }) => {
+
   return (
     <Container>
-      <IconMenuMobile />
-
-      <StyledLink to="/">
+      <LogoArea to="/">
         {!hiddenLogo && <ProfileName fontSize={"1.2rem"} />}
-      </StyledLink>
+      </LogoArea>
 
       <MenuArea>
         <Menu />
       </MenuArea>
-      <h1>ola</h1>
-      
 
-      <SocialLinksAndThemeButton>
-        {!hiddenSocialLinks && <SocialLinks />}
-        <ThemeButton />
-      </SocialLinksAndThemeButton>
+      <SocialLinksAndThemeButtonArea>
+        {!hiddenSocialLinks && <SocialLinks size={"1.5rem"} />}
+        <ThemeButton size={'1.5rem'} />
+      </SocialLinksAndThemeButtonArea>
     </Container>
   );
 };
