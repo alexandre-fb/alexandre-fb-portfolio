@@ -11,6 +11,10 @@ export const Container = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: ${mediaSizes.tablet}) {
+    justify-content: flex-start;
+  }
 `;
 
 export const LogoArea = styled(Link)`
@@ -22,21 +26,15 @@ export const LogoArea = styled(Link)`
   }
 `;
 
-export const MenuArea = styled.div`
-  position: relative;
-  height: fit-content;
+// export const MenuArea = styled.div`
+//   @media (max-width: ${mediaSizes.tablet}) {
+//     position: absolute;
+//     left: 0;
 
-  display: flex;
-  align-items: center;
-
-  @media (max-width: ${mediaSizes.tablet}) {
-    position: absolute;
-    left: 0;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-`;
+//     justify-content: flex-start;
+//     align-items: flex-start;
+//   }
+// `;
 
 export const SocialLinksAndThemeButtonArea = styled.div`
   position: absolute;

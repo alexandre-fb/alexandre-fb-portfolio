@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { IconMenuArea, Nav } from "./styles";
+import { IconMenuHamburgerArea, Nav } from "./styles";
 import { CgMenu, CgCloseO } from "react-icons/cg";
 
 export const Menu = () => {
@@ -13,9 +13,9 @@ export const Menu = () => {
 
   return (
     <>
-      <IconMenuArea onClick={() => setMobileMenuIsSelected(!mobileMenuIsSelected)}>
+      <IconMenuHamburgerArea onClick={() => setMobileMenuIsSelected(!mobileMenuIsSelected)}>
         {mobileMenuIsSelected ? <CgCloseO /> : <CgMenu /> }
-      </IconMenuArea>
+      </IconMenuHamburgerArea>
 
       <Nav mobileMenuIsSelected={ mobileMenuIsSelected }>
         <ul>

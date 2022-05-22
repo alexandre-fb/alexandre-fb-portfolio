@@ -1,30 +1,39 @@
 import styled from "styled-components";
 import { mediaSizes } from "../../assets/mediaSizes/mediaSizes";
 
+//==========Icon Menu Hamburger=========
+
+export const IconMenuHamburgerArea = styled.button`
+  display: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  @media (max-width: ${mediaSizes.tablet}) {
+    display: flex;
+    z-index: 10;
+
+    svg {
+      color: #fff;
+      font-size: 1.5rem;
+    }
+  }
+`;
+
+//==========Menu=========
+
 export const Nav = styled.nav`
   ul {
     display: flex;
     gap: 32px;
   }
 
-  //=========Link=========
-
   li > a {
     position: relative;
     cursor: pointer;
     text-transform: uppercase;
     color: #e0e0e0;
-
-    //=========Active Link=========
-
-    &.active {
-      font-weight: 400;
-      color: #fff;
-
-      ::after {
-        display: none;
-      }
-    }
 
     //=========Animation Hover=========
 
@@ -49,7 +58,20 @@ export const Nav = styled.nav`
       opacity: 1;
       transform: scaleX(1);
     }
+
+    //=========Active NavLink=========
+
+    &.active {
+      font-weight: 400;
+      color: #fff;
+
+      ::after {
+        display: none;
+      }
+    }
   }
+
+  //=========Mobile Menu=========
 
   @media (max-width: ${mediaSizes.tablet}) {
     transform: scale(
@@ -58,36 +80,17 @@ export const Nav = styled.nav`
     transform-origin: 0 0;
     transition: 200ms ease-in-out;
 
-    padding: 80px 100px;
-    background-color: #1b1b1bf8;
-
     position: absolute;
-    left: -10px;
-    top: -10px;
-    z-index: 5;
-
+    z-index: 9;
     ul {
       flex-direction: column;
-    }
-  }
-`;
 
-export const IconMenuArea = styled.button`
-  display: none;
-  cursor: pointer;
+      padding: 80px 100px;
+      background-color: rgba(27, 27, 27, 0.95);
 
-  @media (max-width: ${mediaSizes.tablet}) {
-    display: flex;
-
-    background: none;
-    border: none;
-    padding: 0;
-
-    z-index: 10;
-
-    svg {
-      color: #fff;
-      font-size: 1.5rem;
+      position: absolute;
+      left: -10px;
+      top: -10px;
     }
   }
 `;
