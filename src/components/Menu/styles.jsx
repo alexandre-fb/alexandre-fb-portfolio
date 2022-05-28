@@ -90,7 +90,7 @@ export const Nav = styled.nav`
 
       position: absolute;
       left: -10px;
-      top: -10px;
+      top: -24px;
     }
   }
 `;
