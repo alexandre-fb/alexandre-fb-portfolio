@@ -10,19 +10,17 @@ import { ProfilePosition } from "../../profileData/ProfilePosition";
 import { ProfileImage } from "../../profileData/ProfileImage";
 
 export const MainHome = () => {
-  const fontSizesProfileName = {
-    desktop: "4rem",
+  const fontSizesResponsiveProfileName = {
     tablet: "3.8rem",
     mobile: "3.5rem",
   };
 
-  const textAlignsProfileName = {
+  const textAlignsResponsiveProfileName = {
     desktop: "right",
     tablet: "center",
   };
 
-  const fontSizesProfilePosition = {
-    desktop: "1.8rem",
+  const fontSizesResponsiveProfilePosition = {
     tablet: "1.5rem",
     mobile: "1.3rem",
   };
@@ -31,8 +29,9 @@ export const MainHome = () => {
     <Container>
       <NameArea>
         <ProfileName
-          fontSize={fontSizesProfileName}
-          textAlign={textAlignsProfileName}
+          fontSize={"4rem"}
+          fontSizeResponsive={fontSizesResponsiveProfileName}
+          textAlign={textAlignsResponsiveProfileName}
         />
       </NameArea>
 
@@ -43,7 +42,11 @@ export const MainHome = () => {
       </ImageArea>
 
       <PositionArea>
-        <ProfilePosition fontSize={fontSizesProfilePosition} />
+        <ProfilePosition
+          fontSize="1.8rem"
+          fontSizeResponsive={fontSizesResponsiveProfilePosition}
+          textAlign="rigth"
+        />
       </PositionArea>
     </Container>
   );

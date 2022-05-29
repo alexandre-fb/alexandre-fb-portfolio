@@ -1,14 +1,12 @@
-import styled from "styled-components";
-
 import {
   Container,
   ContainerData,
   ImageAndLinks,
+  HelloMessage,
   TextAndButton,
 } from "./styles";
 import { ProfileImage } from "../../profileData/ProfileImage";
 import { SocialLinks } from "../../linksIcons/SocialLinksTogether";
-import { TitlePage } from "../../TitlePage";
 import { PrimaryButton } from "../../buttons/PrimaryButton";
 
 export const MainSobre = () => {
@@ -20,9 +18,14 @@ export const MainSobre = () => {
           <SocialLinks size={"1.5rem"} />
         </ImageAndLinks>
 
+        <HelloMessage>
+            <h3>Olá :)</h3>
+            <p>sou Alexandre Bisognin, bem-vindo ao meu portfólio.</p>
+          </HelloMessage>
+
+
         <TextAndButton>
-          <h3>Olá :)</h3>
-          <h4>sou Alexandre Bisognin, bem-vindo ao meu portfólio.</h4>
+          
           <p>
             Tenho como objetivo especializar-me na área de desenvolvimento
             Frontend. Para isso venho continuamente me capacitando e aplicando

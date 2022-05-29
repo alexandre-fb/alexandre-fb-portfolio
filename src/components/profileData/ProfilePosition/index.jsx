@@ -1,17 +1,16 @@
 import styled from "styled-components";
 import { mediaSizes } from "../../../assets/mediaSizes/mediaSizes";
 
-export const ProfilePosition = ({ fontSize = "2rem" }) => {
-  console.log("fontSizedefault", fontSize);
+export const ProfilePosition = ({ fontSize, fontSizeResponsive }) => {
   return (
-    <H2 fontSize={fontSize}>
+    <H2 fontSize={fontSize} fontSizeResponsive={fontSizeResponsive}>
       Dev FrontEnd<span>(Jr)</span>
     </H2>
   );
 };
 
 const H2 = styled.h2`
-  font-size: ${({ fontSize }) => (fontSize ? fontSize.desktop : "2rem")};
+  font-size: ${({ fontSize }) => fontSize};
   font-weight: 300;
   color: var(--light-green);
 
@@ -20,10 +19,12 @@ const H2 = styled.h2`
   }
 
   @media (max-width: ${mediaSizes.tablet}) {
-    font-size: ${({ fontSize }) => fontSize.tablet};
+    font-size: ${({ fontSizeResponsive }) =>
+      fontSizeResponsive && fontSizeResponsive.tablet};
   }
 
   @media (max-width: ${mediaSizes.mobile}) {
-    font-size: ${({ fontSize }) => fontSize.mobile};
+    font-size: ${({ fontSizeResponsive }) =>
+      fontSizeResponsive && fontSizeResponsive.mobile};
   }
 `;

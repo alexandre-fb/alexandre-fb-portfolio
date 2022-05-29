@@ -8,7 +8,7 @@ export const ProfileImage = () => {
 
 const Img = styled.img`
   grid-area: image;
-  width: 256px;
+  width: 100%;
   border-radius: 100%;
   border: 1px solid #fff;
   padding: 8px;

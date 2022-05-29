@@ -46,7 +46,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.4;
 }
 ol, ul {
 	list-style: none;
@@ -81,6 +81,7 @@ body {
 	margin: 0 auto;
 	color: #fff;
 	padding: 0 5%;
+	box-sizing: border-box;
 }
 
 `;

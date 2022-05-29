@@ -10,7 +10,7 @@ export const Header = ({ hiddenSocialLinks, hiddenLogo }) => {
   return (
     <Container>
       <LogoArea to="/">
-        {!hiddenLogo && <ProfileName fontSize={"1.2rem"} />}
+        {!hiddenLogo && <ProfileName fontSize={"1.5rem"} />}
       </LogoArea>
 
       <Menu />
