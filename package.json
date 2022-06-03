@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "framer-motion": "^6.3.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.3.1",

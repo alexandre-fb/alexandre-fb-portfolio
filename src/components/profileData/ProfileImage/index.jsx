@@ -1,12 +1,18 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const ProfileImage = () => {
   return (
-    <Img src="..\src\assets\images\profile-image.jpg" alt="Profile Image"></Img>
+    <Img
+      layoutId="profile-image"
+      transition={{ duration: .5 }}
+      src="..\src\assets\images\profile-image.jpg"
+      alt="Profile Image"
+    ></Img>
   );
 };
 
-const Img = styled.img`
+const Img = styled(motion.img)`
   grid-area: image;
   width: 100%;
   border-radius: 100%;

@@ -1,11 +1,14 @@
+import { AnimateSharedLayout } from "framer-motion";
 import { GlobalStyle } from "./globalStyles";
 import { AppRoutes } from "./pages/Routes";
 
 function App() {
   return (
     <>
-      <GlobalStyle />
-      <AppRoutes />
+      <AnimateSharedLayout>
+        <GlobalStyle />
+        <AppRoutes />
+      </AnimateSharedLayout>
     </>
   );
 }

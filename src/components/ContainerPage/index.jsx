@@ -10,7 +10,7 @@ export const ContainerPage = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 100px;
+  gap: 60px;
 
   @media (max-width: ${mediaSizes.tablet}){
     gap: 30px;

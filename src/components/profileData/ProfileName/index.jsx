@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { mediaSizes } from "../../../assets/mediaSizes/mediaSizes";
+import { motion } from "framer-motion";
 
 export const ProfileName = ({
   fontSize,
@@ -9,6 +10,8 @@ export const ProfileName = ({
 }) => {
   return (
     <H1
+      layoutId="profile-name"
+      transition={{duration: .5}}
       fontSize={fontSize}
       fontSizeResponsive={fontSizeResponsive}
       textAlign={textAlign}
@@ -20,7 +23,7 @@ export const ProfileName = ({
   );
 };
 
-const H1 = styled.h1`
+const H1 = styled(motion.h1)`
   font-size: ${({ fontSize }) => fontSize};
   font-weight: 500;
   text-align: ${({ textAlign }) => textAlign.desktop};
