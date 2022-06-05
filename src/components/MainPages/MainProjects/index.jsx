@@ -1,4 +1,13 @@
-import styled from "styled-components";
+import {
+  Container,
+  ListProjects,
+  Project,
+  ProjectTitle,
+  Technologies,
+  ImageArea,
+  ImageProject,
+  Links,
+} from "./styles";
 import { Title } from "../../Title";
 import pokemonPage from "../../../assets/images/pokemon-page.png";
 import pesquisaGitHubPage from "../../../assets/images/pesquisa-github-page.png";
@@ -21,12 +30,18 @@ export const MainProjects = () => {
           </ImageArea>
           <Links>
             <li>
-              <a href="">
+              <a
+                href="https://lista-de-pokemons-com-api.vercel.app/"
+                target="_blank"
+              >
                 <PrimaryButton>Página</PrimaryButton>
               </a>
             </li>
             <li>
-              <a href="">
+              <a
+                href="https://github.com/alexandre-fb/lista-de-pokemons-com-api"
+                target="_blank"
+              >
                 <PrimaryButton>GitHub</PrimaryButton>
               </a>
             </li>
@@ -43,12 +58,18 @@ export const MainProjects = () => {
 
           <Links>
             <li>
-              <a href="">
+              <a
+                href="https://alexandre-fb.github.io/projeto-inicial-fetch-github-api/"
+                target="_blank"
+              >
                 <PrimaryButton>Página</PrimaryButton>
               </a>
             </li>
             <li>
-              <a href="">
+              <a
+                href="https://github.com/alexandre-fb/projeto-inicial-fetch-github-api"
+                target="_blank"
+              >
                 <PrimaryButton>GitHub</PrimaryButton>
               </a>
             </li>
@@ -72,7 +93,10 @@ export const MainProjects = () => {
               </a>
             </li>
             <li>
-              <a href="">
+              <a
+                href="https://github.com/alexandre-fb/alexandre-fb-portfolio"
+                target="_blank"
+              >
                 <PrimaryButton>GitHub</PrimaryButton>
               </a>
             </li>
@@ -82,62 +106,3 @@ export const MainProjects = () => {
     </Container>
   );
 };
-
-const Container = styled.main`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 900px;
-  margin: 20px;
-`;
-
-const ListProjects = styled.ul`
-  margin-top: 30px;
-  width: 100%;
-`;
-
-const Project = styled.li`
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
-
-  ::after {
-    content: "";
-    height: 1px;
-    width: 50%;
-    background-color: rgba(255, 255, 255, 0.3);
-    margin: 60px 0;
-  }
-`;
-
-const ProjectTitle = styled(Title).attrs({ as: "h3" })`
-  font-size: 1.4rem;
-`;
-const Technologies = styled.p``;
-
-const ImageArea = styled.div`
-  background-color: #fff;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  border: 1px solid yellow;
-`;
-
-const ImageProject = styled.div`
-  height: 400px;
-  width: 100%;
-
-  background: no-repeat top center url(${({ image }) => image});
-  background-size: cover;
-  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
-`;
-
-const Links = styled.ul`
-  display: flex;
-  align-items: center;
-  gap: 20px;
-`;
