@@ -47,6 +47,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1.4;
+	overflow-y: scroll;
 }
 ol, ul {
 	list-style: none;
