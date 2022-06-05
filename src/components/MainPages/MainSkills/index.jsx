@@ -1,9 +1,14 @@
-import { Container, ContainerProSkills, ListPrimaryProSkills, ListSecundaryProSkills, ContainerSoftSkills  } from "./styles";
+import {
+  Container,
+  ContainerProSkills,
+  ListPrimaryProSkills,
+  ListSecundaryProSkills,
+  ContainerSoftSkills,
+} from "./styles";
 import { Title } from "../../Title";
 import { Divider } from "../../Divider";
 import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
-
 
 export const MainSkills = () => {
   return (
@@ -68,4 +73,3 @@ export const MainSkills = () => {
     </Container>
   );
 };
-
