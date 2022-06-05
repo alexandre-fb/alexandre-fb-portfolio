@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import { Container, ContainerProSkills, ListPrimaryProSkills, ListSecundaryProSkills, ContainerSoftSkills  } from "./styles";
 import { Title } from "../../Title";
 import { Divider } from "../../Divider";
-import { FaHtml5, FaCss3Alt, FaReact, FaGithub, FaFigma } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
-import { SiStyledcomponents } from "react-icons/si";
+
 
 export const MainSkills = () => {
   return (
@@ -13,19 +13,27 @@ export const MainSkills = () => {
 
         <ListPrimaryProSkills>
           <li>
-            <FaHtml5 />
+            <i>
+              <FaHtml5 />
+            </i>
             <h3>HTML</h3>
           </li>
           <li>
-            <FaCss3Alt />
+            <i>
+              <FaCss3Alt />
+            </i>
             <h3>CSS</h3>
           </li>
           <li>
-            <DiJavascript1 />
+            <i>
+              <DiJavascript1 />
+            </i>
             <h3>JavaScript</h3>
           </li>
           <li>
-            <FaReact />
+            <i>
+              <FaReact />
+            </i>
             <h3>ReactJs</h3>
           </li>
         </ListPrimaryProSkills>
@@ -61,96 +69,3 @@ export const MainSkills = () => {
   );
 };
 
-const Container = styled.main`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 900px;
-
-  /* border: 1px solid red; */
-`;
-
-const ContainerProSkills = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-`;
-
-const ListPrimaryProSkills = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  column-gap: 50px;
-  row-gap: 30px;
-
-  text-align: center;
-
-  li {
-    border: 1px solid var(--light-green);
-    border-radius: 12px;
-    width: 150px;
-    height: 150px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    transition: 300ms;
-
-    svg {
-      font-size: 3rem;
-      transition: inherit;
-    }
-
-    h3 {
-      transition: inherit;
-    }
-
-    :hover {
-      background-color: #fff;
-
-      h3 {
-        color: #000;
-      }
-
-      svg {
-        color: var(--light-green);
-      }
-    }
-  }
-`;
-
-const ListSecundaryProSkills = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  li {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    text-align: center;
-  }
-
-  & li::before {
-    content: "";
-    display: inline-block;
-    margin-right: 7px;
-    width: 5px;
-    height: 5px;
-    border-radius: 100%;
-    border: 1px solid var(--light-green);
-  }
-`;
-
-const ContainerSoftSkills = styled.div`
-  text-align: center;
-  p {
-    padding: 30px 30px;
-  }
-`;
