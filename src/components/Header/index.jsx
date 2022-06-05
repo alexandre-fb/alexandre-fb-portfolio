@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import { Container, LogoArea, SocialLinksAndThemeButtonArea } from "./styles";
 import { ProfileName } from "../profileData/ProfileName";
 import { SocialLinks } from "../linksIcons/SocialLinksTogether";

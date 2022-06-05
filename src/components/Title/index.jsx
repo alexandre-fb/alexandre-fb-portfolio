@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const TitlePage = styled.h2`
+export const Title = styled.h2`
   font-family: "Fira Code", monospace;
   color: var(--grey);
-  font-size: 1.7rem;
-  margin-bottom: 50px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 `;
