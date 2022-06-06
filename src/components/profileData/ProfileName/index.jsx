@@ -4,18 +4,22 @@ import { motion } from "framer-motion";
 
 export const ProfileName = ({
   fontSize,
-  fontSizeResponsive,
-  textAlign = "left",
-  textAlignResponsive,
+  fontSizeTablet,
+  fontSizeMobile,
+  textAlign,
+  textAlignTablet,
+  textAlignMobile
 }) => {
   return (
     <H1
       layoutId="profile-name"
-      transition={{duration: .5}}
+      transition={{ duration: 0.5 }}
       fontSize={fontSize}
-      fontSizeResponsive={fontSizeResponsive}
+      fontSizeTablet={fontSizeTablet}
+      fontSizeMobile={fontSizeMobile}
       textAlign={textAlign}
-      textAlignResponsive={textAlignResponsive}
+      textAlignTablet={textAlignTablet}
+      textAlignMobile={textAlignMobile}
     >
       Alexandre <br />
       Bisognin
@@ -26,16 +30,15 @@ export const ProfileName = ({
 const H1 = styled(motion.h1)`
   font-size: ${({ fontSize }) => fontSize};
   font-weight: 500;
-  text-align: ${({ textAlign }) => textAlign.desktop};
+  text-align: ${({ textAlign }) => textAlign};
 
   @media (max-width: ${mediaSizes.tablet}) {
-    text-align: ${({ textAlign }) => textAlign.tablet};
-    font-size: ${({ fontSizeResponsive }) =>
-      fontSizeResponsive && fontSizeResponsive.tablet};
+    text-align: ${({ textAlignTablet }) => textAlignTablet && textAlignTablet};
+    font-size: ${({ fontSizeTablet }) => fontSizeTablet && fontSizeTablet};
   }
 
   @media (max-width: ${mediaSizes.mobile}) {
-    font-size: ${({ fontSizeResponsive }) =>
-      fontSizeResponsive && fontSizeResponsive.mobile};
+    font-size: ${({ fontSizeMobile }) => fontSizeMobile && fontSizeMobile};
+    text-align: ${({ textAlignMobile }) => textAlignMobile && textAlignMobile};
   }
 `;
