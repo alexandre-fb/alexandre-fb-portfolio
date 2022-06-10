@@ -1,3 +1,4 @@
+import { ThemeProvider } from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
@@ -37,7 +38,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 	box-sizing: border-box;
 	text-decoration: none;
-	color: #fff;
+	color: ${(props) => props.theme.colors.textColor};
 	font-weight: 300;
 }
 /* HTML5 display-role reset for older browsers */
@@ -71,7 +72,7 @@ table {
 }
 
 html{
-    background-color: var(--very-dark-purple);
+    background-color: ${(props) => props.theme.colors.backgroundColor};
 	width: 100%;
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
@@ -80,7 +81,6 @@ html{
 body {
 	max-width: 1440px;
 	margin: 0 auto;
-	color: #fff;
 	padding: 0 5%;
 	box-sizing: border-box;
 }

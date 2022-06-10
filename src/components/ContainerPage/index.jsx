@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mediaSizes } from "../../assets/mediaSizes/mediaSizes";
+import { mediaSizes } from "../../style/mediaSizes/mediaSizes";
 
 export const ContainerPage = styled.div`
   height: 100vh;

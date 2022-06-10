@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mediaSizes } from "../../../assets/mediaSizes/mediaSizes";
+import { mediaSizes } from "../../../style/mediaSizes/mediaSizes";
 import { Divider } from "../../Divider";
 
 export const Container = styled.main`
@@ -27,7 +27,19 @@ export const Container = styled.main`
 export const NameArea = styled.div`
   grid-area: name;
 
-  @media (max-width: ${mediaSizes.tablet}) {
+  //=====ProfileName=====
+  & :first-child {
+    font-size: 4rem;
+    text-align: right;
+
+    @media (max-width: ${mediaSizes.tablet}) {
+      font-size: 3.6rem;
+      text-align: center;
+    }
+
+    @media (max-width: ${mediaSizes.mobile}) {
+      font-size: 3.2rem;
+    }
   }
 `;
 
@@ -46,6 +58,7 @@ export const ImageArea = styled.div`
   align-items: center;
   width: 240px;
 
+  //=====ProfileImage======
   & :first-child {
     position: absolute;
     width: 100%;
@@ -63,4 +76,22 @@ export const PositionArea = styled.div`
   @media (max-width: ${mediaSizes.tablet}) {
     justify-self: center;
   }
+
+  //=====ProfilePosition=====
+  & :first-child {
+    font-size: 1.8rem;
+
+    @media (max-width: ${ mediaSizes.tablet }) {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: ${ mediaSizes.mobile }) {
+      font-size: 1.3rem;
+    }
+  }
 `;
+
+// fontSize="1.8rem"
+          // fontSizeTablet='1.5rem'
+          // fontSizeMobile='1.3rem'
+          // textAlign="rigth"

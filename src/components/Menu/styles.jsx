@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import { mediaSizes } from "../../assets/mediaSizes/mediaSizes";
-
-//==========Icon Menu Hamburger=========
+import { mediaSizes } from "../../style/mediaSizes/mediaSizes";
 
 export const IconMenuHamburgerArea = styled.button`
   display: none;
@@ -10,18 +8,18 @@ export const IconMenuHamburgerArea = styled.button`
   padding: 0;
   cursor: pointer;
 
+  svg {
+    color: ${({ theme, mobileMenuIsSelected }) =>
+      mobileMenuIsSelected ? "#fff" : theme.colors.textColor};
+
+    font-size: 1.5rem;
+  }
+
   @media (max-width: ${mediaSizes.tablet}) {
     display: flex;
     z-index: 10;
-
-    svg {
-      color: #fff;
-      font-size: 1.5rem;
-    }
   }
 `;
-
-//==========Menu=========
 
 export const Nav = styled.nav`
   ul {
@@ -33,7 +31,6 @@ export const Nav = styled.nav`
     position: relative;
     cursor: pointer;
     text-transform: uppercase;
-    color: #e0e0e0;
 
     //=========Animation Hover=========
 
@@ -41,7 +38,7 @@ export const Nav = styled.nav`
       content: "";
       height: 2px;
       width: 100%;
-      background-color: var(--light-green);
+      background-color: ${({ theme }) => theme.colors.primary};
 
       position: absolute;
       left: 0;
@@ -59,11 +56,8 @@ export const Nav = styled.nav`
       transform: scaleX(1);
     }
 
-    //=========Active NavLink=========
-
     &.active {
       font-weight: 400;
-      color: #fff;
 
       ::after {
         display: none;
@@ -77,11 +71,14 @@ export const Nav = styled.nav`
     transform: scale(
       ${({ mobileMenuIsSelected }) => (mobileMenuIsSelected ? "1" : "0")}
     );
+    opacity: ${({ mobileMenuIsSelected }) =>
+      mobileMenuIsSelected ? "1" : "0"};
     transform-origin: 0 0;
     transition: 200ms ease-in-out;
 
     position: absolute;
     z-index: 9;
+
     ul {
       flex-direction: column;
 
@@ -91,6 +88,10 @@ export const Nav = styled.nav`
       position: absolute;
       left: -10px;
       top: -24px;
+
+      li a {
+        color: #fff;
+      }
     }
   }
 `;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { mediaSizes } from "../../../assets/mediaSizes/mediaSizes";
+import { mediaSizes } from "../../../style/mediaSizes/mediaSizes";
+import { Title } from "../../Title";
 
 export const Container = styled.main`
   display: flex;
@@ -25,7 +26,7 @@ export const ListPrimaryProSkills = styled.ul`
   text-align: center;
 
   li {
-    border: 1px solid var(--light-green);
+    border: 1px solid ${({ theme }) => theme.colors.primary};
     border-radius: 12px;
     width: 150px;
     height: 150px;
@@ -48,16 +49,11 @@ export const ListPrimaryProSkills = styled.ul`
     }
 
     :hover {
-      background-color: #fff;
       transform: scale(1.05);
       cursor: default;
 
       svg {
-        color: var(--light-green);
-      }
-
-      h3 {
-        color: #000;
+        color: ${({ theme }) => theme.colors.primary};
       }
     }
   }
@@ -84,7 +80,6 @@ export const ListSecundaryProSkills = styled.ul`
     padding: 10px 20px;
     text-align: center;
 
-    /* transform: scale(1); */
     transition: 300ms;
   }
 
@@ -95,7 +90,7 @@ export const ListSecundaryProSkills = styled.ul`
     width: 5px;
     height: 5px;
     border-radius: 100%;
-    border: 1px solid var(--light-green);
+    border: 1px solid ${({ theme }) => theme.colors.primary};
   }
 
   & li:hover {
@@ -104,10 +99,6 @@ export const ListSecundaryProSkills = styled.ul`
   }
 `;
 
-export const ContainerSoftSkills = styled.div`
+export const ContainerSoftSkills = styled(ContainerProSkills)`
   text-align: center;
-
-  p {
-    padding: 30px 30px;
-  }
 `;

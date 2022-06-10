@@ -1,44 +1,14 @@
 import styled from "styled-components";
-import { mediaSizes } from "../../../assets/mediaSizes/mediaSizes";
 import { motion } from "framer-motion";
 
-export const ProfileName = ({
-  fontSize,
-  fontSizeTablet,
-  fontSizeMobile,
-  textAlign,
-  textAlignTablet,
-  textAlignMobile
-}) => {
+export const ProfileName = () => {
   return (
-    <H1
-      layoutId="profile-name"
-      transition={{ duration: 0.5 }}
-      fontSize={fontSize}
-      fontSizeTablet={fontSizeTablet}
-      fontSizeMobile={fontSizeMobile}
-      textAlign={textAlign}
-      textAlignTablet={textAlignTablet}
-      textAlignMobile={textAlignMobile}
-    >
-      Alexandre <br />
-      Bisognin
-    </H1>
+    <Name layoutId="profile-name" transition={{ duration: 0.5 }}>
+      Alexandre <br /> Bisognin
+    </Name>
   );
 };
 
-const H1 = styled(motion.h1)`
-  font-size: ${({ fontSize }) => fontSize};
+const Name = styled(motion.h1)`
   font-weight: 500;
-  text-align: ${({ textAlign }) => textAlign};
-
-  @media (max-width: ${mediaSizes.tablet}) {
-    text-align: ${({ textAlignTablet }) => textAlignTablet && textAlignTablet};
-    font-size: ${({ fontSizeTablet }) => fontSizeTablet && fontSizeTablet};
-  }
-
-  @media (max-width: ${mediaSizes.mobile}) {
-    font-size: ${({ fontSizeMobile }) => fontSizeMobile && fontSizeMobile};
-    text-align: ${({ textAlignMobile }) => textAlignMobile && textAlignMobile};
-  }
 `;

@@ -1,31 +1,29 @@
 import styled from "styled-components";
-import { mediaSizes } from "../../../assets/mediaSizes/mediaSizes";
+import { mediaSizes } from "../../../style/mediaSizes/mediaSizes";
 
 export const ProfilePosition = ({
   fontSize,
-  fontSizeResponsive,
   fontSizeTablet,
   fontSizeMobile,
 }) => {
   return (
-    <H2
-      fontSize={fontSize}
-      fontSizeResponsive={fontSizeResponsive}
-      fontSizeTablet={fontSizeTablet}
-      fontSizeMobile={fontSizeMobile}
+    <Position
+      // fontSize={fontSize}
+      // fontSizeTablet={fontSizeTablet}
+      // fontSizeMobile={fontSizeMobile}
     >
       Dev FrontEnd<span>(Jr)</span>
-    </H2>
+    </Position>
   );
 };
 
-const H2 = styled.h2`
-  font-size: ${({ fontSize }) => fontSize};
+const Position = styled.h2`
+  /* font-size: ${({ fontSize }) => fontSize}; */
   font-weight: 300;
-  color: var(--light-green);
+  color: ${({ theme }) => theme.colors.primary};
 
   span {
-    color: var(--yellow);
+    color: ${({ theme }) => theme.colors.secondary};
   }
 
   @media (max-width: ${mediaSizes.tablet}) {

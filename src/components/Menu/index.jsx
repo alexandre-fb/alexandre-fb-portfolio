@@ -7,13 +7,9 @@ export const Menu = () => {
 
   const [ mobileMenuIsSelected, setMobileMenuIsSelected ] = useState(false)
 
-  useEffect(()=>{
-    console.log(mobileMenuIsSelected)
-  }, [mobileMenuIsSelected])
-
   return (
     <>
-      <IconMenuHamburgerArea onClick={() => setMobileMenuIsSelected(!mobileMenuIsSelected)}>
+      <IconMenuHamburgerArea mobileMenuIsSelected={ mobileMenuIsSelected } onClick={() => setMobileMenuIsSelected(!mobileMenuIsSelected)}>
         {mobileMenuIsSelected ? <CgCloseO /> : <CgMenu /> }
       </IconMenuHamburgerArea>
 

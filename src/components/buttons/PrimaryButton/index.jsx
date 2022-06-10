@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const PrimaryButton = styled.button`
   background: none;
-  border: 1px solid var(--light-green);
+  border: 1px solid ${({ theme }) => theme.colors.primary};
   padding: 10px 20px;
   border-radius: 40px;
-  color: var(--light-green);
+  color: ${({ theme }) => theme.colors.primary};
 
   cursor: pointer;
 
@@ -13,8 +13,8 @@ export const PrimaryButton = styled.button`
   transition: 300ms ease-in-out;
 
   &:hover {
-    background-color: var(--light-green);
-    color: var(--very-dark-purple);
+    background-color: ${({ theme }) => theme.colors.primary};
+    color: #fff;
     transform: scale(1.05);
   }
 `;

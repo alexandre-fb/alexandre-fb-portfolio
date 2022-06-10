@@ -16,6 +16,6 @@ const Img = styled(motion.img)`
   grid-area: image;
   width: 100%;
   border-radius: 100%;
-  border: 1px solid #fff;
+  border: 1px solid ${({ theme }) => theme.name === 'light' ? '#c3c3c3' : theme.colors.textColor};
   padding: 8px;
 `;

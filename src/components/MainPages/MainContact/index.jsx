@@ -4,20 +4,19 @@ import { SocialLinks } from "../../linksIcons/SocialLinksTogether";
 import { ProfileName } from "../../profileData/ProfileName";
 import { ProfilePosition } from "../../profileData/ProfilePosition";
 import { Title } from "../../Title";
-import { mediaSizes } from "../../../assets/mediaSizes/mediaSizes";
+import { mediaSizes } from "../../../style/mediaSizes/mediaSizes";
 
 export const MainContact = () => {
   return (
     <Container>
       <NameAndPositionContainer>
-        <ProfileName
-          fontSize="3rem"
-          fontSizeTablet="2.5rem"
-          textAlign="right"
-          textAlignMobile="center"
-        />
+        <NameArea>
+          <ProfileName />
+        </NameArea>
         <StyledDivider height="100px" />
-        <ProfilePosition fontSize="1.5rem" fontSizeTablet="1.2rem" />
+        <PositionArea>
+          <ProfilePosition />
+        </PositionArea>
       </NameAndPositionContainer>
 
       <Contacts>
@@ -51,6 +50,20 @@ const NameAndPositionContainer = styled.div`
   @media (max-width: ${mediaSizes.mobile}) {
     flex-direction: column;
     gap: 15px;
+  }
+`;
+
+const NameArea = styled.div`
+  //=====ProfileName=====
+  & :first-child {
+    font-size: 3rem;
+    text-align: right;
+  }
+`;
+const PositionArea = styled.div`
+  //=====ProfilePosition=====
+  & :first-child {
+    font-size: 1.5rem;
   }
 `;
 

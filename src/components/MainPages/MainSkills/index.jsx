@@ -14,7 +14,7 @@ export const MainSkills = () => {
   return (
     <Container>
       <ContainerProSkills>
-        <Title>Pró Skills</Title>
+        <Title margin='80px 0 0 0'>Pró Skills</Title>
 
         <ListPrimaryProSkills>
           <li>

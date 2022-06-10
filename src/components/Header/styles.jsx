@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { mediaSizes } from "../../assets/mediaSizes/mediaSizes";
+import { mediaSizes } from "../../style/mediaSizes/mediaSizes";
 
 export const Container = styled.header`
   width: 100%;
   padding: 80px 0 20px 0;
 
   position: relative;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,21 +19,15 @@ export const Container = styled.header`
 export const LogoArea = styled(Link)`
   position: absolute;
   left: 0;
-
   @media (max-width: ${mediaSizes.tablet}) {
     display: none;
   }
+
+  //=====ProfileName=====
+  & :first-child {
+    font-size: 1.2rem;
+  }
 `;
-
-// export const MenuArea = styled.div`
-//   @media (max-width: ${mediaSizes.tablet}) {
-//     position: absolute;
-//     left: 0;
-
-//     justify-content: flex-start;
-//     align-items: flex-start;
-//   }
-// `;
 
 export const SocialLinksAndThemeButtonArea = styled.div`
   position: absolute;

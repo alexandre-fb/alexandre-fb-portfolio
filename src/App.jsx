@@ -1,13 +1,17 @@
 import { AnimateSharedLayout } from "framer-motion";
-import { GlobalStyle } from "./globalStyles";
+
+import { GlobalStyle } from "./style/globalStyles";
 import { AppRoutes } from "./pages/Routes";
+import { ThemeContextProvider } from "./contexts/themeContext";
 
 function App() {
   return (
     <>
       <AnimateSharedLayout>
-        <GlobalStyle />
-        <AppRoutes />
+        <ThemeContextProvider>
+          <GlobalStyle />
+          <AppRoutes />
+        </ThemeContextProvider>
       </AnimateSharedLayout>
     </>
   );
