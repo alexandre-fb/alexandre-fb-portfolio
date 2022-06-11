@@ -1,10 +1,14 @@
-import styled from "styled-components";
-import { Divider } from "../../Divider";
+import {
+  Container,
+  NameAndPositionContainer,
+  NameArea,
+  StyledDivider,
+  PositionArea,
+  Contacts,
+} from "./styles";
 import { SocialLinks } from "../../linksIcons/SocialLinks";
 import { ProfileName } from "../../profileData/ProfileName";
 import { ProfilePosition } from "../../profileData/ProfilePosition";
-import { Title } from "../../Title";
-import { mediaSizes } from "../../../style/mediaSizes/mediaSizes";
 
 export const MainContact = () => {
   return (
@@ -30,52 +34,3 @@ export const MainContact = () => {
     </Container>
   );
 };
-
-const Container = styled.main`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
-`;
-
-const NameAndPositionContainer = styled.div`
-  display: flex;
-  gap: 50px;
-  align-items: center;
-
-  @media (max-width: ${mediaSizes.tablet}) {
-    gap: 30px;
-  }
-
-  @media (max-width: ${mediaSizes.mobile}) {
-    flex-direction: column;
-    gap: 15px;
-  }
-`;
-
-const NameArea = styled.div`
-  //=====ProfileName=====
-  & :first-child {
-    font-size: 3rem;
-    text-align: right;
-  }
-`;
-const PositionArea = styled.div`
-  //=====ProfilePosition=====
-  & :first-child {
-    font-size: 1.5rem;
-  }
-`;
-
-const StyledDivider = styled(Divider)`
-  @media (max-width: ${mediaSizes.mobile}) {
-    display: none;
-  }
-`;
-
-const Contacts = styled.ul`
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
-`;
