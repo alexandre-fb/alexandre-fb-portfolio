@@ -43,7 +43,7 @@ export const NameArea = styled.div`
   }
 `;
 
-export const DividerStyled = styled(Divider)`
+export const StyledDivider = styled(Divider)`
   grid-area: divider;
 
   @media (max-width: ${mediaSizes.tablet}) {
@@ -81,17 +81,12 @@ export const PositionArea = styled.div`
   & :first-child {
     font-size: 1.8rem;
 
-    @media (max-width: ${ mediaSizes.tablet }) {
+    @media (max-width: ${mediaSizes.tablet}) {
       font-size: 1.5rem;
     }
 
-    @media (max-width: ${ mediaSizes.mobile }) {
+    @media (max-width: ${mediaSizes.mobile}) {
       font-size: 1.3rem;
     }
   }
 `;
-
-// fontSize="1.8rem"
-          // fontSizeTablet='1.5rem'
-          // fontSizeMobile='1.3rem'
-          // textAlign="rigth"

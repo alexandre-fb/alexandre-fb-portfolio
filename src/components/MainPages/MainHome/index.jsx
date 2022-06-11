@@ -1,7 +1,7 @@
 import {
   Container,
   NameArea,
-  DividerStyled,
+  StyledDivider,
   ImageArea,
   PositionArea,
 } from "./styles";
@@ -16,21 +16,15 @@ export const MainHome = () => {
         <ProfileName />
       </NameArea>
 
-      <DividerStyled />
+      <StyledDivider />
 
       <ImageArea>
-        <ProfileImage  />
+        <ProfileImage />
       </ImageArea>
 
       <PositionArea>
-        <ProfilePosition
-          // fontSize="1.8rem"
-          // fontSizeTablet='1.5rem'
-          // fontSizeMobile='1.3rem'
-          // textAlign="rigth"
-        />
+        <ProfilePosition />
       </PositionArea>
     </Container>
   );
 };
-
