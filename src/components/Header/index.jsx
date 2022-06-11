@@ -7,9 +7,7 @@ import { Menu } from "../Menu";
 export const Header = ({ hiddenSocialLinks, hiddenLogo }) => {
   return (
     <Container>
-      <LogoArea to="/">
-        {!hiddenLogo && <ProfileName />}
-      </LogoArea>
+      <LogoArea to="/">{!hiddenLogo && <ProfileName />}</LogoArea>
 
       <Menu />
 

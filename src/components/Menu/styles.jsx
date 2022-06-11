@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { mediaSizes } from "../../style/mediaSizes/mediaSizes";
 
-export const IconMenuHamburgerArea = styled.button`
+export const IconResponsiveMenuArea = styled.button`
   display: none;
   background: none;
   border: none;

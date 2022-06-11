@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { mediaSizes } from "../../style/mediaSizes/mediaSizes";
 
 export const Container = styled.header`
   width: 100%;
-  padding: 80px 0 20px 0;
+  margin: 80px 0 20px 0;
 
   position: relative;
   display: flex;

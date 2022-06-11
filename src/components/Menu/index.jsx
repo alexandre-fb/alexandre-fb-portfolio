@@ -1,19 +1,22 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { IconMenuHamburgerArea, Nav } from "./styles";
+import { IconResponsiveMenuArea, Nav } from "./styles";
 import { CgMenu, CgCloseO } from "react-icons/cg";
 
 export const Menu = () => {
-
-  const [ mobileMenuIsSelected, setMobileMenuIsSelected ] = useState(false)
+  const [responsiveMenuIsSelected, setResponsiveMenuIsSelected] =
+    useState(false);
 
   return (
     <>
-      <IconMenuHamburgerArea mobileMenuIsSelected={ mobileMenuIsSelected } onClick={() => setMobileMenuIsSelected(!mobileMenuIsSelected)}>
-        {mobileMenuIsSelected ? <CgCloseO /> : <CgMenu /> }
-      </IconMenuHamburgerArea>
+      <IconResponsiveMenuArea
+        responsiveMenuIsSelected={responsiveMenuIsSelected}
+        onClick={() => setResponsiveMenuIsSelected(!responsiveMenuIsSelected)}
+      >
+        {responsiveMenuIsSelected ? <CgCloseO /> : <CgMenu />}
+      </IconResponsiveMenuArea>
 
-      <Nav mobileMenuIsSelected={ mobileMenuIsSelected }>
+      <Nav responsiveMenuIsSelected={responsiveMenuIsSelected}>
         <ul>
           <li>
             <NavLink to="/">Início</NavLink>
