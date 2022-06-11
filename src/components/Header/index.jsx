@@ -1,6 +1,6 @@
 import { Container, LogoArea, SocialLinksAndThemeButtonArea } from "./styles";
 import { ProfileName } from "../profileData/ProfileName";
-import { SocialLinks } from "../linksIcons/SocialLinksTogether";
+import { SocialLinks } from "../linksIcons/SocialLinks";
 import { ThemeButton } from "../buttons/ThemeButton";
 import { Menu } from "../Menu";
 

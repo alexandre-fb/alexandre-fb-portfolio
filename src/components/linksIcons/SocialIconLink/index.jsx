@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import { IconLinkStyled } from "./styles";
 
 export const SocialIconLink = ({ children, href }) => {
   return (
@@ -8,13 +8,4 @@ export const SocialIconLink = ({ children, href }) => {
   );
 };
 
-const IconLinkStyled = styled.a`
-  svg {
-    transition: 300ms;
-    cursor: pointer;
-  }
 
-  svg:hover {
-    color: ${({ theme }) => theme.colors.primary};
-  }
-`;

@@ -6,7 +6,7 @@ import {
   TextAndButton,
 } from "./styles";
 import { ProfileImage } from "../../profileData/ProfileImage";
-import { SocialLinks } from "../../linksIcons/SocialLinksTogether";
+import { SocialLinks } from "../../linksIcons/SocialLinks";
 import { PrimaryButton } from "../../buttons/PrimaryButton";
 
 export const MainSobre = () => {

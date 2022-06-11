@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Divider } from "../../Divider";
-import { SocialLinks } from "../../linksIcons/SocialLinksTogether";
+import { SocialLinks } from "../../linksIcons/SocialLinks";
 import { ProfileName } from "../../profileData/ProfileName";
 import { ProfilePosition } from "../../profileData/ProfilePosition";
 import { Title } from "../../Title";
