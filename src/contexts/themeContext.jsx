@@ -10,12 +10,12 @@ export const ThemeContextProvider = ({ children }) => {
 
     const [ theme, setTheme ] = useState(darkTheme)
 
-    const changeThemeColor = () => {
+    const changeTheme = () => {
         setTheme(theme === darkTheme ? lightTheme : darkTheme) 
     }  
 
     return (
-        <ThemeContext.Provider value={{ changeThemeColor }}>
+        <ThemeContext.Provider value={{ changeTheme }}>
             <ThemeProvider theme={theme}>
                 { children }
             </ThemeProvider>
