@@ -4,8 +4,6 @@ import { mediaSizes } from "../../style/mediaSizes/mediaSizes";
 export const ContainerPage = styled.div`
   height: 100vh;
 
-  position: relative;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
