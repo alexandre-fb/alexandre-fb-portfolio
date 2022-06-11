@@ -38,6 +38,10 @@ export const ProjectTitle = styled(Title).attrs({ as: "h3" })`
 
 export const ImageProject = styled.img`
   width: 80%;
+
+  @media (max-width: ${mediaSizes.mobile}) {
+    width: 100%;
+  }
 `;
 
 export const Technologies = styled.ul`
