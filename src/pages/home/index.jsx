@@ -4,11 +4,10 @@ import { Header } from "../../components/Header";
 import { MainHome } from "../../components/MainPages/MainHome";
 import { Footer } from "../../components/Footer";
 
-
 export const Home = () => {
   return (
     <ContainerPage>
-      <Header hiddenLogo/>
+      <Header hiddenLogo />
       <MainHome />
       <Footer />
     </ContainerPage>

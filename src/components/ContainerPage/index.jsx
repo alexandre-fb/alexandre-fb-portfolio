@@ -10,7 +10,7 @@ export const ContainerPage = styled.div`
   align-items: center;
   gap: 60px;
 
-  @media (max-width: ${mediaSizes.tablet}){
+  @media (max-width: ${mediaSizes.tablet}) {
     gap: 30px;
   }
 `;

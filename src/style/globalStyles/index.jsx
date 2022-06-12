@@ -3,13 +3,6 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
-//=========VARIABLES COLORS==========
-:root{
-	--very-dark-purple: #191522;
-	--light-green: #70B966;
-	--yellow: #FFCC03;
-}
-
 //=========RESET ERIC MAYER==========
 
 /* http://meyerweb.com/eric/tools/css/reset/ 

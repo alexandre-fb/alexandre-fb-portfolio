@@ -7,11 +7,9 @@ import { MainContact } from "../../components/MainPages/MainContact";
 export const Contato = () => {
   return (
     <ContainerPage>
-      <Header hiddenLogo hiddenSocialLinks/>
+      <Header hiddenLogo hiddenSocialLinks />
       <MainContact />
       <Footer />
     </ContainerPage>
   );
 };
-
-

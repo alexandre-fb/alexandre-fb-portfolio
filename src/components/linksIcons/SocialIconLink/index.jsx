@@ -7,5 +7,3 @@ export const SocialIconLink = ({ children, href }) => {
     </IconLinkStyled>
   );
 };
-
-

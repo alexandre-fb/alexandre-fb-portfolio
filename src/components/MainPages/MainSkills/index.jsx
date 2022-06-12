@@ -57,9 +57,7 @@ export const MainSkills = () => {
         <Title>Soft Skills</Title>
         <ListSoftSkills>
           <li>
-            <h3>
-              Resiliência, tolerância e flexibilidade
-            </h3>
+            <h3>Resiliência, tolerância e flexibilidade</h3>
             <p>
               Aprendi a importância e pude desenvolver essas habilidades atuando
               em instituições públicas, interagindo e trabalhando com os mais

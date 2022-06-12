@@ -80,7 +80,8 @@ export const TextAndButton = styled.div`
   gap: 20px;
 
   p {
-    strong, a {
+    strong,
+    a {
       font-weight: 500;
     }
   }

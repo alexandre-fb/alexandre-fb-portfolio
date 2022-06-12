@@ -1,4 +1,4 @@
-import { Name } from './styles'
+import { Name } from "./styles";
 export const ProfileName = () => {
   return (
     <Name layoutId="profile-name" transition={{ duration: 0.5 }}>
@@ -6,5 +6,3 @@ export const ProfileName = () => {
     </Name>
   );
 };
-
-

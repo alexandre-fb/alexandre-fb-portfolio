@@ -10,7 +10,7 @@ export const IconResponsiveMenuArea = styled.button`
 
   svg {
     color: ${({ theme, responsiveMenuIsSelected }) =>
-    responsiveMenuIsSelected ? "#fff" : theme.colors.textColor};
+      responsiveMenuIsSelected ? "#fff" : theme.colors.textColor};
 
     font-size: 1.5rem;
   }
@@ -69,10 +69,11 @@ export const Nav = styled.nav`
 
   @media (max-width: ${mediaSizes.tablet}) {
     transform: scale(
-      ${({ responsiveMenuIsSelected }) => (responsiveMenuIsSelected ? "1" : "0")}
+      ${({ responsiveMenuIsSelected }) =>
+        responsiveMenuIsSelected ? "1" : "0"}
     );
     opacity: ${({ responsiveMenuIsSelected }) =>
-    responsiveMenuIsSelected ? "1" : "0"};
+      responsiveMenuIsSelected ? "1" : "0"};
     transform-origin: 0 0;
     transition: 200ms ease-in-out;
 
