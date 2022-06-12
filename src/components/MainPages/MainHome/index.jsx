@@ -15,7 +15,7 @@ export const MainHome = () => {
       <NameArea
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.5 }}
+        transition={{ duration: 1 }}
       >
         <ProfileName />
       </NameArea>
@@ -24,13 +24,13 @@ export const MainHome = () => {
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.5, delay: 0.8 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
       />
 
       <ImageArea
         initial={{ x: -5, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.8, type: "ease-out" }}
+        transition={{ duration: 0.5 }}
       >
         <ProfileImage />
       </ImageArea>
@@ -38,7 +38,7 @@ export const MainHome = () => {
       <PositionArea
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.7, delay: 0.7 }}
+        transition={{ duration: 1 }}
       >
         <ProfilePosition />
       </PositionArea>

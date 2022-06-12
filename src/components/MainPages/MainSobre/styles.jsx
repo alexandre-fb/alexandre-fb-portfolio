@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { mediaSizes } from "../../../style/mediaSizes/mediaSizes";
+import { motion } from "framer-motion";
 
 export const Container = styled.main`
   display: flex;
@@ -28,7 +29,7 @@ export const ContainerData = styled.div`
   }
 `;
 
-export const ImageAndLinks = styled.div`
+export const ImageAndLinks = styled(motion.div)`
   grid-area: image-and-links;
   display: flex;
   flex-direction: column;
@@ -42,7 +43,7 @@ export const ImageAndLinks = styled.div`
   }
 `;
 
-export const HelloMessage = styled.div`
+export const HelloMessage = styled(motion.div)`
   grid-area: hello-message;
 
   h3 {
@@ -73,7 +74,7 @@ export const HelloMessage = styled.div`
   }
 `;
 
-export const TextAndButton = styled.div`
+export const TextAndButton = styled(motion.div)`
   grid-area: text-and-button;
   display: flex;
   flex-direction: column;

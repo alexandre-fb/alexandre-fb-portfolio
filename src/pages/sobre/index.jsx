@@ -4,7 +4,7 @@ import { PageStructureDefault } from "../../components/PageStructureDefault";
 
 export const Sobre = () => {
   return (
-    <PageStructureDefault hiddenSocialLinks>
+    <PageStructureDefault hiddenHeaderSocialLinks>
       <MainSobre />
     </PageStructureDefault>
   );
