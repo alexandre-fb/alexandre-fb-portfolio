@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { mediaSizes } from "../../style/mediaSizes/mediaSizes";
+import { motion } from "framer-motion";
 
-export const Container = styled.header`
+export const Container = styled(motion.header)`
   width: 100%;
   margin: 80px 0 20px 0;
 
@@ -26,6 +27,7 @@ export const LogoArea = styled(Link)`
   //=====ProfileName=====
   & :first-child {
     font-size: 1.2rem;
+    text-align: right;
   }
 `;
 

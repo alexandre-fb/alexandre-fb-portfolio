@@ -4,15 +4,15 @@ import { SocialLinks } from "../linksIcons/SocialLinks";
 import { ThemeButton } from "../buttons/ThemeButton";
 import { Menu } from "../Menu";
 
-export const Header = ({ hiddenSocialLinks, hiddenLogo }) => {
+export const Header = ({ hiddenHeaderSocialLinks, hiddenHeaderLogo }) => {
   return (
     <Container>
-      <LogoArea to="/">{!hiddenLogo && <ProfileName />}</LogoArea>
+      <LogoArea to="/">{!hiddenHeaderLogo && <ProfileName />}</LogoArea>
 
       <Menu />
 
       <SocialLinksAndThemeButtonArea>
-        {!hiddenSocialLinks && <SocialLinks size={"1.5rem"} />}
+        {!hiddenHeaderSocialLinks && <SocialLinks size={"1.5rem"} />}
         <ThemeButton size={"1.5rem"} />
       </SocialLinksAndThemeButtonArea>
     </Container>

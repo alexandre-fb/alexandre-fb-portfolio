@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { mediaSizes } from "../../style/mediaSizes/mediaSizes";
 
-export const ContainerPage = styled.div`
+export const Container = styled.div`
   height: 100vh;
 
   display: flex;

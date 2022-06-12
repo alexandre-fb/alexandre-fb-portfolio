@@ -28,7 +28,6 @@ export const NameArea = styled.div`
   //=====ProfileName=====
   & :first-child {
     font-size: 3rem;
-    text-align: right;
 
     @media (max-width: ${mediaSizes.tablet}) {
       font-size: 2.8rem;

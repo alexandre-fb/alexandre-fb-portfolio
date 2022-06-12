@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { mediaSizes } from "../../../style/mediaSizes/mediaSizes";
 import { Divider } from "../../Divider";
+import { motion } from "framer-motion";
 
 export const Container = styled.main`
   display: grid;
@@ -24,13 +25,12 @@ export const Container = styled.main`
   }
 `;
 
-export const NameArea = styled.div`
+export const NameArea = styled(motion.div)`
   grid-area: name;
 
   //=====ProfileName=====
   & :first-child {
     font-size: 4rem;
-    text-align: right;
 
     @media (max-width: ${mediaSizes.tablet}) {
       font-size: 3.6rem;
@@ -51,7 +51,7 @@ export const StyledDivider = styled(Divider)`
   }
 `;
 
-export const ImageArea = styled.div`
+export const ImageArea = styled(motion.div)`
   grid-area: image;
   position: relative;
   display: flex;
@@ -69,7 +69,7 @@ export const ImageArea = styled.div`
   }
 `;
 
-export const PositionArea = styled.div`
+export const PositionArea = styled(motion.div)`
   grid-area: position;
   justify-self: end;
 

@@ -1,15 +1,11 @@
 import styled from "styled-components";
-import { ContainerPage } from "../../components/ContainerPage";
-import { Header } from "../../components/Header";
 import { MainSobre } from "../../components/MainPages/MainSobre";
-import { Footer } from "../../components/Footer";
+import { PageStructureDefault } from "../../components/PageStructureDefault";
 
 export const Sobre = () => {
   return (
-    <ContainerPage>
-      <Header hiddenSocialLinks={true} />
+    <PageStructureDefault hiddenSocialLinks>
       <MainSobre />
-      <Footer />
-    </ContainerPage>
+    </PageStructureDefault>
   );
 };

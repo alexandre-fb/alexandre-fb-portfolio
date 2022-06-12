@@ -1,15 +1,10 @@
-import styled from "styled-components";
-import { ContainerPage } from "../../components/ContainerPage";
-import { Header } from "../../components/Header";
+import { PageStructureDefault } from "../../components/PageStructureDefault";
 import { MainHome } from "../../components/MainPages/MainHome";
-import { Footer } from "../../components/Footer";
 
 export const Home = () => {
   return (
-    <ContainerPage>
-      <Header hiddenLogo />
+    <PageStructureDefault hiddenHeaderLogo>
       <MainHome />
-      <Footer />
-    </ContainerPage>
+    </PageStructureDefault>
   );
 };

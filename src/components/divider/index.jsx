@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const Divider = styled.div`
+export const Divider = styled(motion.div)`
   width: 1px;
   height: ${({ height }) => (height ? height : "150px")};
   background-color: ${({ theme }) =>

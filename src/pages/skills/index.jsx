@@ -1,17 +1,11 @@
-import styled from "styled-components";
-import { ContainerPage } from "../../components/ContainerPage";
-import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer";
+import { PageStructureDefault } from "../../components/PageStructureDefault";
 import { MainSkills } from "../../components/MainPages/MainSkills";
 
 export const Skills = () => {
   return (
-    <ContainerPage>
-      <Header />
+    <PageStructureDefault>
       <MainSkills />
-      <Footer />
-    </ContainerPage>
+    </PageStructureDefault>
   );
 };
 
-const Container = styled(ContainerPage)``;

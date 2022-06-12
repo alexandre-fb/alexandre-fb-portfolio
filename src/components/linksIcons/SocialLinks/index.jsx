@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 
 export const SocialLinks = ({ size }) => {
   return (
-    <Container layoutId="social-links-togeder" transition={{ duration: 0.5 }}>
+    <Container layoutId="social-links-togeder" transition={{ duration: 0.7 }}>
       <SocialIconLink href={"https://www.linkedin.com/in/alexandre-fb/"}>
         <FaLinkedin size={size} />
       </SocialIconLink>

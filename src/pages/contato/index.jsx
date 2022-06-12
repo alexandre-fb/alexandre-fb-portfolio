@@ -1,15 +1,10 @@
-import styled from "styled-components";
-import { ContainerPage } from "../../components/ContainerPage";
-import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer";
 import { MainContact } from "../../components/MainPages/MainContact";
+import { PageStructureDefault } from "../../components/PageStructureDefault";
 
 export const Contato = () => {
   return (
-    <ContainerPage>
-      <Header hiddenLogo hiddenSocialLinks />
+    <PageStructureDefault hiddenHeaderLogo hiddenHeaderSocialLinks>
       <MainContact />
-      <Footer />
-    </ContainerPage>
+    </PageStructureDefault>
   );
 };
