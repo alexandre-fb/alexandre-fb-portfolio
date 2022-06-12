@@ -1,18 +1,18 @@
 import {
   Container,
-  ProjectTitle,
   ImageProject,
   DataContainer,
   Technologies,
   Buttons,
 } from "./styles";
+import { Title } from "../../../Title";
 import { PrimaryButton } from "../../../buttons/PrimaryButton";
 
 export const Project = ({ title, technologies, links, image }) => {
   return (
     <Container>
       <DataContainer>
-        <ProjectTitle>{title}</ProjectTitle>
+        <Title>{title}</Title>
 
         <ImageProject src={image} />
 
@@ -23,15 +23,15 @@ export const Project = ({ title, technologies, links, image }) => {
         </Technologies>
 
         <Buttons>
-          {links.map( (item, index) => {
-              return (
-                <li>
-                  <a href={item.link}></a>
-                  <PrimaryButton>{item.name }</PrimaryButton>
-                </li>
-              )
-            })
-          }
+          {links.map((item, index) => {
+            return (
+              <li key={index}>
+                <a href={item.link} target="_blank">
+                  <PrimaryButton>{item.name}</PrimaryButton>
+                </a>
+              </li>
+            );
+          })}
         </Buttons>
       </DataContainer>
     </Container>

@@ -18,8 +18,14 @@ export const MainProjects = () => {
             "Styled Components",
           ]}
           links={[
-            { name: "Página", link: "www.google.com" },
-            { name: "gitHub", link: "www.google.com" },
+            {
+              name: "Página",
+              link: "https://lista-de-pokemons-com-api.vercel.app/",
+            },
+            {
+              name: "gitHub",
+              link: "https://github.com/alexandre-fb/lista-de-pokemons-com-api",
+            },
           ]}
           image={pokedexProjectImage}
         />
@@ -34,8 +40,11 @@ export const MainProjects = () => {
             "Styled Components",
           ]}
           links={[
-            { name: "Página", link: "www.google.com" },
-            { name: "gitHub", link: "www.google.com" },
+            { name: "Página", link: "#" },
+            {
+              name: "gitHub",
+              link: "https://github.com/alexandre-fb/alexandre-fb-portfolio",
+            },
           ]}
           image={portfolioProjectImage}
         />
@@ -44,8 +53,14 @@ export const MainProjects = () => {
           title="Página de busca de usuário com Api do GitHub"
           technologies={["Html", "Css", "JavaScript"]}
           links={[
-            { name: "Página", link: "www.google.com" },
-            { name: "gitHub", link: "www.google.com" },
+            {
+              name: "Página",
+              link: "https://alexandre-fb.github.io/projeto-inicial-fetch-github-api/",
+            },
+            {
+              name: "gitHub",
+              link: "https://github.com/alexandre-fb/projeto-inicial-fetch-github-api",
+            },
           ]}
           image={pesquisaGitHubProjectImage}
         />
