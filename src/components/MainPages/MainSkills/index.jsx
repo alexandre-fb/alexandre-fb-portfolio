@@ -4,6 +4,7 @@ import {
   ListPrimaryProSkills,
   ListSecundaryProSkills,
   ContainerSoftSkills,
+  ListSoftSkills,
 } from "./styles";
 import { Title } from "../../Title";
 import { Divider } from "../../Divider";
@@ -14,31 +15,23 @@ export const MainSkills = () => {
   return (
     <Container>
       <ContainerProSkills>
-        <Title margin='80px 0 0 0'>Pró Skills</Title>
+        <Title>Pró Skills</Title>
 
         <ListPrimaryProSkills>
           <li>
-            <i>
-              <FaHtml5 />
-            </i>
+            <FaHtml5 />
             <h3>HTML</h3>
           </li>
           <li>
-            <i>
-              <FaCss3Alt />
-            </i>
+            <FaCss3Alt />
             <h3>CSS</h3>
           </li>
           <li>
-            <i>
-              <DiJavascript1 />
-            </i>
+            <DiJavascript1 />
             <h3>JavaScript</h3>
           </li>
           <li>
-            <i>
-              <FaReact />
-            </i>
+            <FaReact />
             <h3>ReactJs</h3>
           </li>
         </ListPrimaryProSkills>
@@ -50,11 +43,11 @@ export const MainSkills = () => {
           <li>Git Flow</li>
           <li>Fetch Api</li>
           <li>Figma</li>
-          <li> After Effects</li>
-          <li> Premire</li>
-          <li> Illustrator</li>
-          <li> Indesign</li>
-          <li> Photoshop</li>
+          <li>After Effects</li>
+          <li>Premire</li>
+          <li>Illustrator</li>
+          <li>Indesign</li>
+          <li>Photoshop</li>
         </ListSecundaryProSkills>
       </ContainerProSkills>
 
@@ -62,13 +55,37 @@ export const MainSkills = () => {
 
       <ContainerSoftSkills>
         <Title>Soft Skills</Title>
+        <ListSoftSkills>
+          <li>
+            <h3>
+              Resiliência, tolerância e flexibilidade
+            </h3>
+            <p>
+              Aprendi a importância e pude desenvolver essas habilidades atuando
+              em instituições públicas, interagindo e trabalhando com os mais
+              variados perfis de pessoas.
+            </p>
+          </li>
+          <li>
+            <h3>Inteligência emocional</h3>
+            <p>
+              Procuro desenvolver essa habilidade através de leitura, cursos e
+              eventos sobre o tema, por perceber que é uma skill que traz uma
+              maior qualidade de vida para mim, e, por consequência, para as
+              pessoas ao meu redor.
+            </p>
+          </li>
 
-        <p>
-          Sou uma pessoa responsável e colaborativa. Procuro manter uma
-          comunicação clara e respeitosa em qualquer situação. Tenho buscado me
-          aprimorar na habilidade de "aprender a aprender", visando manter-me
-          motivado, atualizado e em constante evolução.
-        </p>
+          <li>
+            <h3>Aprendizado ativo</h3>
+            <p>
+              Essa é uma habilidade pela qual tenho me dedicado cada vez mais,
+              tanto para me manter atualizado frente às rápidas mudanças do
+              mundo, quanto para me manter motivado na busca de evolução pessoal
+              e profissional.
+            </p>
+          </li>
+        </ListSoftSkills>
       </ContainerSoftSkills>
     </Container>
   );
