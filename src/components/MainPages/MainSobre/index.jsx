@@ -21,7 +21,7 @@ export const MainSobre = () => {
 
         <HelloMessage>
           <h3>Olá :)</h3>
-          <p>bem-vindo(a) ao meu portfólio.</p>
+          <p>bem-vindo(a) ao meu portfólio!</p>
         </HelloMessage>
 
         <TextAndButton>
@@ -36,7 +36,7 @@ export const MainSobre = () => {
             <strong>desenvolvimento FrontEnd</strong>. Para isso venho
             continuamente me capacitando e aplicando os conhecimentos adquiridos
             em projetos pessoais e profissionais, utilizando as principais
-            técnologias e ferramentas da área. Pode acessar meus últimos
+            tecnologias e ferramentas da área. Pode acessar meus últimos
             projetos clicando <Link to="/projetos">aqui!</Link>
           </p>
 
