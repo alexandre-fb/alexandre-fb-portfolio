@@ -1,6 +1,4 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
-
+import { Name } from './styles'
 export const ProfileName = () => {
   return (
     <Name layoutId="profile-name" transition={{ duration: 0.5 }}>
@@ -9,6 +7,4 @@ export const ProfileName = () => {
   );
 };
 
-const Name = styled(motion.h1)`
-  font-weight: 500;
-`;
+

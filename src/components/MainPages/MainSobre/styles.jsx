@@ -79,6 +79,12 @@ export const TextAndButton = styled.div`
   flex-direction: column;
   gap: 20px;
 
+  p {
+    strong, a {
+      font-weight: 500;
+    }
+  }
+
   a {
     margin-top: 20px;
   }
