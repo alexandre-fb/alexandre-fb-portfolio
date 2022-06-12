@@ -6,13 +6,11 @@ import { MainProjects } from "../../components/MainPages/MainProjects";
 
 export const Projetos = () => {
   return (
-    <Container>
+    <ContainerPage>
       <Header />
       <MainProjects />
       <Footer />
-    </Container>
+    </ContainerPage>
   );
 };
 
-const Container = styled(ContainerPage)`
-`;

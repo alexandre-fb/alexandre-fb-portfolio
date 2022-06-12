@@ -6,12 +6,11 @@ import { Footer } from "../../components/Footer";
 
 export const Sobre = () => {
   return (
-    <Container>
+    <ContainerPage>
       <Header hiddenSocialLinks={true} />
       <MainSobre />
       <Footer />
-    </Container>
+    </ContainerPage>
   );
 };
 
-const Container = styled(ContainerPage)``;

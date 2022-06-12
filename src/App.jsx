@@ -7,12 +7,10 @@ import { ThemeContextProvider } from "./contexts/themeContext";
 function App() {
   return (
     <>
-      <AnimateSharedLayout>
-        <ThemeContextProvider>
-          <GlobalStyle />
-          <AppRoutes />
-        </ThemeContextProvider>
-      </AnimateSharedLayout>
+      <ThemeContextProvider>
+        <GlobalStyle />
+        <AppRoutes />
+      </ThemeContextProvider>
     </>
   );
 }

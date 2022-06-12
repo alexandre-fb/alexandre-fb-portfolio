@@ -6,11 +6,11 @@ import { MainSkills } from "../../components/MainPages/MainSkills";
 
 export const Skills = () => {
   return (
-    <Container>
+    <ContainerPage>
       <Header />
       <MainSkills />
       <Footer />
-    </Container>
+    </ContainerPage>
   );
 };
 

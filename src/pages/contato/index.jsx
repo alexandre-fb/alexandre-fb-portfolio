@@ -6,12 +6,12 @@ import { MainContact } from "../../components/MainPages/MainContact";
 
 export const Contato = () => {
   return (
-    <Container>
-      <Header hiddenSocialLinks/>
+    <ContainerPage>
+      <Header hiddenLogo hiddenSocialLinks/>
       <MainContact />
       <Footer />
-    </Container>
+    </ContainerPage>
   );
 };
 
-const Container = styled(ContainerPage)``;
+
