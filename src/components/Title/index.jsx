@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const Title = styled.h2`
+export const Title = styled(motion.h2)`
   font-family: "Fira Code", monospace;
   font-size: 1.5rem;
   text-align: center;

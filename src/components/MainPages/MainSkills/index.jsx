@@ -1,8 +1,8 @@
 import {
   Container,
-  ContainerProSkills,
-  ListPrimaryProSkills,
-  ListSecundaryProSkills,
+  ContainerHardSkills,
+  ListPrimaryHardSkills,
+  ListSecundaryHardSkills,
   ContainerSoftSkills,
   ListSoftSkills,
 } from "./styles";
@@ -10,50 +10,112 @@ import { Title } from "../../Title";
 import { Divider } from "../../Divider";
 import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
+import { motion } from "framer-motion";
 
 export const MainSkills = () => {
+  //=====start Variables animation=====
+  const listPrimaryHardSkills = {
+    visible: {
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemPrimaryHardSkills = {
+    hidden: {
+      y: 20,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { ease: "easeOut" },
+    },
+    hover: {
+      scale: 1.1,
+      transition: { duration: 0.5, type: "spring", stiffness: 100 },
+    },
+  };
+  //=====end Variables animation=====
+
   return (
     <Container>
-      <ContainerProSkills>
-        <Title>Pró Skills</Title>
+      <ContainerHardSkills>
+        <Title
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2 }}
+        >
+          Hard Skills
+        </Title>
 
-        <ListPrimaryProSkills>
-          <li>
+        <ListPrimaryHardSkills
+          initial="hidden"
+          animate="visible"
+          variants={listPrimaryHardSkills}
+        >
+          <motion.li
+            variants={itemPrimaryHardSkills}
+            whileHover={itemPrimaryHardSkills.hover}
+          >
             <FaHtml5 />
             <h3>HTML</h3>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            variants={itemPrimaryHardSkills}
+            whileHover={itemPrimaryHardSkills.hover}
+          >
             <FaCss3Alt />
             <h3>CSS</h3>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            variants={itemPrimaryHardSkills}
+            whileHover={itemPrimaryHardSkills.hover}
+          >
             <DiJavascript1 />
             <h3>JavaScript</h3>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            variants={itemPrimaryHardSkills}
+            whileHover={itemPrimaryHardSkills.hover}
+          >
             <FaReact />
             <h3>ReactJs</h3>
-          </li>
-        </ListPrimaryProSkills>
+          </motion.li>
+        </ListPrimaryHardSkills>
 
-        <ListSecundaryProSkills>
+        <ListSecundaryHardSkills
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.7 } }}
+        >
           <li>Styled Components</li>
           <li>Git</li>
           <li>GitHub</li>
           <li>Git Flow</li>
           <li>Fetch Api</li>
+          <li>Context Api</li>
+          <li>Framer Motion</li>
           <li>Figma</li>
           <li>After Effects</li>
           <li>Premire</li>
           <li>Illustrator</li>
           <li>Indesign</li>
           <li>Photoshop</li>
-        </ListSecundaryProSkills>
-      </ContainerProSkills>
+        </ListSecundaryHardSkills>
+      </ContainerHardSkills>
 
-      <Divider horizontal></Divider>
+      <Divider
+        horizontal
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { delay: 1.2 } }}
+      ></Divider>
 
-      <ContainerSoftSkills>
+      <ContainerSoftSkills
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { duration: 1, delay: 1.2 } }}
+      >
         <Title>Soft Skills</Title>
         <ListSoftSkills>
           <li>
