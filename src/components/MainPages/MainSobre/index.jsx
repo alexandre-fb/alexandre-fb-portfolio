@@ -10,24 +10,33 @@ import { SocialLinks } from "../../linksIcons/SocialLinks";
 import { PrimaryButton } from "../../buttons/PrimaryButton";
 import { Link } from "react-router-dom";
 
-
 export const MainSobre = () => {
   return (
     <Container>
       <ContainerData>
-        <ImageAndLinks initial={{ x: -5, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.7 }}>
+        <ImageAndLinks
+          initial={{ x: -5, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        >
           <ProfileImage />
           <SocialLinks size={"1.5rem"} />
         </ImageAndLinks>
 
-        <HelloMessage initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .7, delay: .7 }}>
+        <HelloMessage
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.5 }}
+        >
           <h3>Olá :)</h3>
           <p>bem-vindo(a) ao meu portfólio!</p>
         </HelloMessage>
 
-        <TextAndButton initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .7, delay: .7 }}>
+        <TextAndButton
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.7 }}
+        >
           <p>
             Essa página tem o propósito de reunir os últimos projetos que
             desenvolvi, bem como algumas informações sobre mim. Disponibilizo no

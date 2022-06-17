@@ -100,14 +100,17 @@ export const ListSoftSkills = styled(motion.ul)`
   flex-direction: column;
   gap: 50px;
 
-  h3 {
+  li {
+    h3 {
     font-weight: 500;
     margin-bottom: 10px;
-
+  
     &::before {
       content: "✔";
       margin-right: 5px;
       color: ${({ theme }) => theme.colors.primary};
     }
   }
+  }
 `;
+
