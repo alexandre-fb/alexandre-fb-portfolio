@@ -23,7 +23,6 @@ export const MainHome = () => {
       <StyledDivider
         initial={{ scale: 0, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        exit={{ opacity: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
       />
 

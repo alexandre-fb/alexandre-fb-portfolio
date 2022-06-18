@@ -1,5 +1,7 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { mediaSizes } from "../../../style/mediaSizes/mediaSizes";
+
 
 export const Container = styled.main`
   display: flex;
@@ -17,7 +19,7 @@ export const ListProjects = styled.ul`
   }
 `;
 
-export const ItemProject = styled.li`
+export const ItemProject = styled(motion.li)`
   display: flex;
   gap: 30px;
   align-items: center;
@@ -39,11 +41,11 @@ export const ItemProject = styled.li`
   }
 `;
 
-export const Image = styled.img`
+export const Image = styled(motion.img)`
   width: 100%;
 `;
 
-export const Technologies = styled.ul`
+export const Technologies = styled(motion.ul)`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -59,7 +61,7 @@ export const Technologies = styled.ul`
   }
 `;
 
-export const Buttons = styled.ul`
+export const Buttons = styled(motion.ul)`
   display: flex;
   align-items: center;
   gap: 20px;

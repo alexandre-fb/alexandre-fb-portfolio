@@ -16,6 +16,7 @@ import { Divider } from "../../Divider";
 import { motion } from "framer-motion";
 
 export const MainSkills = () => {
+  
   //=====start variants animation framer motion=====
   const animationListPrimaryHardSkills = {
     visible: {
