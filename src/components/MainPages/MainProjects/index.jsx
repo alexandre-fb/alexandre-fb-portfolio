@@ -1,69 +1,41 @@
-import { Container, ListProjects } from "./styles";
-import { Project } from "./Project";
-import pokedexProjectImage from "../../../assets/images/pokedex-project.png";
-import portfolioProjectImage from "../../../assets/images/portfolio-project.png";
-import pesquisaGitHubProjectImage from "../../../assets/images/busca-api-github-project.png";
+import {
+  Container,
+  ListProjects,
+  ItemProject,
+  Image,
+  Technologies,
+  Buttons,
+} from "./styles";
+import { Title } from "../../Title";
+import { projectsData } from "./projectsData";
+import { PrimaryButton } from "../../buttons/PrimaryButton";
 
 export const MainProjects = () => {
   return (
     <Container>
       <ListProjects>
-        <Project
-          title="Pokedex com PokeApi"
-          technologies={[
-            "Html",
-            "Css",
-            "JavaScript",
-            "ReactJS",
-            "Styled Components",
-          ]}
-          links={[
-            {
-              name: "Página",
-              link: "https://lista-de-pokemons-com-api.vercel.app/",
-            },
-            {
-              name: "gitHub",
-              link: "https://github.com/alexandre-fb/lista-de-pokemons-com-api",
-            },
-          ]}
-          image={pokedexProjectImage}
-        />
-
-        <Project
-          title="Portfólio Alexandre Bisognin"
-          technologies={[
-            "Html",
-            "Css",
-            "JavaScript",
-            "ReactJS",
-            "Styled Components",
-          ]}
-          links={[
-            { name: "Página", link: "#" },
-            {
-              name: "gitHub",
-              link: "https://github.com/alexandre-fb/alexandre-fb-portfolio",
-            },
-          ]}
-          image={portfolioProjectImage}
-        />
-
-        <Project
-          title="Página de busca de usuário com Api do GitHub"
-          technologies={["Html", "Css", "JavaScript"]}
-          links={[
-            {
-              name: "Página",
-              link: "https://alexandre-fb.github.io/projeto-inicial-fetch-github-api/",
-            },
-            {
-              name: "gitHub",
-              link: "https://github.com/alexandre-fb/projeto-inicial-fetch-github-api",
-            },
-          ]}
-          image={pesquisaGitHubProjectImage}
-        />
+        {projectsData.map((item, index) => {
+          return (
+            <ItemProject key={index}>
+              <Title fontSize={"1.4rem"}>{item.title}</Title>
+              <Image src={item.image} />
+              <Technologies>
+                {item.technologies.map((item, index) => {
+                  return <li key={index}>{item}</li>;
+                })}
+              </Technologies>
+              <Buttons>
+                {item.links.map((item, index) => {
+                  return (
+                    <a href={item.link} target="_blank" key={index}>
+                      <PrimaryButton>{item.name}</PrimaryButton>
+                    </a>
+                  );
+                })}
+              </Buttons>
+            </ItemProject>
+          );
+        })}
       </ListProjects>
     </Container>
   );
