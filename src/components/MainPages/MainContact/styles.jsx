@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import { mediaSizes } from "../../../style/mediaSizes/mediaSizes";
 import { Divider } from "../../Divider";
@@ -24,7 +25,7 @@ export const NameAndPositionContainer = styled.div`
   }
 `;
 
-export const NameArea = styled.div`
+export const NameArea = styled(motion.div)`
   //=====ProfileName=====
   & :first-child {
     font-size: 3rem;
@@ -38,7 +39,7 @@ export const NameArea = styled.div`
     }
   }
 `;
-export const PositionArea = styled.div`
+export const PositionArea = styled(motion.div)`
   //=====ProfilePosition=====
   & :first-child {
     font-size: 1.5rem;
@@ -59,7 +60,7 @@ export const StyledDivider = styled(Divider)`
   }
 `;
 
-export const Contacts = styled.ul`
+export const Contacts = styled(motion.ul)`
   display: flex;
   flex-direction: column;
   gap: 15px;

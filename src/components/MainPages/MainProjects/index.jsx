@@ -11,33 +11,6 @@ import { projectsData } from "./projectsData";
 import { PrimaryButton } from "../../buttons/PrimaryButton";
 
 export const MainProjects = () => {
-  //=====start variants framer motion=====
-  const animationProject = {
-    visible: {
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const animationProjectContent = {
-    hidden: {
-      y: 20,
-      opacity: 0,
-    },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: { ease: "easeOut" },
-    },
-    hover: {
-      scale: 1.1,
-      transition: { duration: 0.5, type: "spring", stiffness: 100 },
-    },
-  };
-  //=====end Variables animation=====
-
   return (
     <Container>
       <ListProjects>
