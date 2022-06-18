@@ -20,7 +20,8 @@ export const MainProjects = () => {
               <Title
                 fontSize={"1.4rem"}
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { duration: 0.7 } }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.7 }}
               >
                 {item.title}
               </Title>
@@ -30,16 +31,16 @@ export const MainProjects = () => {
                 animate={{
                   opacity: 1,
                   y: 0,
-                  transition: { duration: 0.5, delay: 0.3 },
                 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
               />
               <Technologies
                 initial={{ opacity: 0, y: 20 }}
                 animate={{
                   opacity: 1,
                   y: 0,
-                  transition: { duration: 0.5, delay: 0.4 },
                 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
               >
                 {item.technologies.map((item, index) => {
                   return <li key={index}>{item}</li>;
@@ -50,8 +51,8 @@ export const MainProjects = () => {
                 animate={{
                   opacity: 1,
                   y: 0,
-                  transition: { duration: 0.5, delay: 0.5 },
                 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
               >
                 {item.links.map((item, index) => {
                   return (

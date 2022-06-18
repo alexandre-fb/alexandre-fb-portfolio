@@ -81,6 +81,6 @@ export const softSkillsData = [
   {
     name: "Aprendizado ativo",
     description:
-      "Essa é uma habilidade pela qual tenho me dedicado cada vez mais, tanto para me manter atualizado frente às rápidas mudanças do mundo, quanto para me manter motivado na busca de evolução pessoal e profissional.",
+      "Essa é uma habilidade pela qual tenho me dedicado cada vez mais, tanto para me manter atualizado, frente às rápidas mudanças do mundo, quanto para me manter motivado na busca de evolução pessoal e profissional.",
   },
 ];

@@ -13,10 +13,12 @@ import {
 } from "./skillsData.jsx";
 import { Title } from "../../Title";
 import { Divider } from "../../Divider";
+import { useTheme } from "styled-components";
 import { motion } from "framer-motion";
 
 export const MainSkills = () => {
-  
+  const theme = useTheme();
+
   //=====start variants animation framer motion=====
   const animationListPrimaryHardSkills = {
     visible: {
@@ -36,10 +38,6 @@ export const MainSkills = () => {
       y: 0,
       opacity: 1,
       transition: { ease: "easeOut" },
-    },
-    hover: {
-      scale: 1.1,
-      transition: { duration: 0.5, type: "spring", stiffness: 100 },
     },
   };
   //=====end Variables animation=====
@@ -65,7 +63,14 @@ export const MainSkills = () => {
               <motion.li
                 key={index}
                 variants={animationItemPrimaryHardSkills}
-                whileHover={animationItemPrimaryHardSkills.hover}
+                whileHover={{
+                  scale: 1.1,
+                  color: theme.colors.primary,
+                  transition: {
+                    scale: { duration: 0.3 },
+                    color: { duration: 0.1 },
+                  },
+                }}
               >
                 {item.icon}
                 <h3>{item.name}</h3>
@@ -79,7 +84,7 @@ export const MainSkills = () => {
           animate={{ opacity: 1, transition: { duration: 0.7, delay: 0.7 } }}
         >
           {secondaryHardSkillsData.map((item, index) => {
-            return <li key={index}>{item.name}</li>;
+            return <motion.li key={index}>{item.name}</motion.li>;
           })}
         </ListSecundaryHardSkills>
       </ContainerHardSkills>

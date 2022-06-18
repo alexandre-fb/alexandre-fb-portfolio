@@ -41,12 +41,6 @@ export const ListPrimaryHardSkills = styled(motion.ul)`
       font-size: 3rem;
       transition: 300ms;
     }
-
-    &:hover {
-      svg {
-        color: ${({ theme }) => theme.colors.primary};
-      }
-    }
   }
 
   @media (max-width: ${mediaSizes.tablet}) {
@@ -70,8 +64,7 @@ export const ListSecundaryHardSkills = styled(motion.ul)`
     align-items: center;
     padding: 10px 20px;
     text-align: center;
-
-    transition: 300ms;
+    cursor: default;
   }
 
   & ::before {
@@ -82,11 +75,6 @@ export const ListSecundaryHardSkills = styled(motion.ul)`
     height: 5px;
     border-radius: 100%;
     border: 1px solid ${({ theme }) => theme.colors.primary};
-  }
-
-  & li:hover {
-    transform: scale(1.1);
-    cursor: default;
   }
 `;
 

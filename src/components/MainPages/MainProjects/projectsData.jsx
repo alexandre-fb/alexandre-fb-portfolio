@@ -11,7 +11,7 @@ export const projectsData = [
       "Css",
       "JavaScript",
       "ReactJS",
-      "Styled, Components",
+      "Styled Components",
     ],
     links: [
       {
@@ -31,7 +31,7 @@ export const projectsData = [
     links: [
       {
         name: "Página",
-        link: "#",
+        link: "/",
       },
       {
         name: "gitHub",
