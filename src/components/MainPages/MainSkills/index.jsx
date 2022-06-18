@@ -12,7 +12,7 @@ import {
   softSkillsData,
 } from "./skillsData.jsx";
 import { Title } from "../../Title";
-import { Divider } from "../../Divider";
+import { Divider } from "../../divider";
 import { useTheme } from "styled-components";
 import { motion } from "framer-motion";
 
