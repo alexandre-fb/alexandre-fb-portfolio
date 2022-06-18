@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { mediaSizes } from "../../../style/mediaSizes/mediaSizes";
-import { Divider } from "../../Divider";
+import { Divider } from "../../divider";
 import { motion } from "framer-motion";
 
 export const Container = styled.main`

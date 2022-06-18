@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import { mediaSizes } from "../../../style/mediaSizes/mediaSizes";
-import { Divider } from "../../Divider";
+import { Divider } from "../../divider";
 
 export const Container = styled.main`
   display: flex;
