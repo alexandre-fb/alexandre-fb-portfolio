@@ -14,6 +14,7 @@ export const Container = styled(motion.header)`
 
   @media (max-width: ${mediaSizes.tablet}) {
     justify-content: flex-start;
+    margin-top: 25px;
   }
 `;
 
