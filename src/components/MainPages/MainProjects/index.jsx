@@ -25,15 +25,17 @@ export const MainProjects = () => {
               >
                 {item.title}
               </Title>
-              <Image
-                src={item.image}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                transition={{ duration: 0.5, delay: 0.3 }}
-              />
+              <a href={item.links[0].link} target="_blank">
+                <Image
+                  src={item.image}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                />
+              </a>
               <Technologies
                 initial={{ opacity: 0, y: 20 }}
                 animate={{
