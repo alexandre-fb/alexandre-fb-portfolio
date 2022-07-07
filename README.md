@@ -1,7 +1,7 @@
 # Portfólio Alexandre Bisognin
 
 ## Link de acesso
-[👉 Portfólio](https://alexandre-fb-portfolio-alexandre-fb.vercel.app/)
+[👉 Portfólio](https://alexandrefb.com)
 
 ## Objetivo
 
