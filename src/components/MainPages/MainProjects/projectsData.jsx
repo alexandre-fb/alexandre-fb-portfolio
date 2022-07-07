@@ -1,18 +1,28 @@
+import whereInTheWorldImage from "../../../assets/images/api-rest-coutries-project.png";
 import pokedexProjectImage from "../../../assets/images/pokedex-project.png";
 import portfolioProjectImage from "../../../assets/images/portfolio-project.png";
 import pesquisaGitHubProjectImage from "../../../assets/images/busca-api-github-project.png";
 
 export const projectsData = [
   {
+    title: "Where in the World?",
+    image: whereInTheWorldImage,
+    technologies: ["Html", "Css", "JavaScript", "ReactJS", "Styled Components"],
+    links: [
+      {
+        name: "Página",
+        link: "https://countries-api-frontend-mentor-rust.vercel.app/",
+      },
+      {
+        name: "gitHub",
+        link: "https://github.com/alexandre-fb/countries-api-frontend-mentor",
+      },
+    ],
+  },
+  {
     title: "Pokedex com PokeApi",
     image: pokedexProjectImage,
-    technologies: [
-      "Html",
-      "Css",
-      "JavaScript",
-      "ReactJS",
-      "Styled Components",
-    ],
+    technologies: ["Html", "Css", "JavaScript", "ReactJS", "Styled Components"],
     links: [
       {
         name: "Página",
