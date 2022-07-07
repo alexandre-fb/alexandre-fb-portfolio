@@ -8,7 +8,7 @@ import {
 import { ProfileImage } from "../../profileData/ProfileImage";
 import { SocialLinks } from "../../linksIcons/SocialLinks";
 import { PrimaryButton } from "../../buttons/PrimaryButton";
-import { Link } from "react-router-dom";
+import curriculoFile from "../../../assets/pdfs/alexandre-bisognin-curriculo.pdf";
 
 export const MainSobre = () => {
   return (
@@ -54,7 +54,7 @@ export const MainSobre = () => {
             encontrar minhas experiências e formações profissionais.
           </p>
 
-          <a href="https://drive.google.com/file/d/1B2bQbjkpa3Dqg3l6xgn6niIvQwJIDgT9/view?usp=sharing" target='_blank'>
+          <a href={curriculoFile} download>
             <PrimaryButton>Currículo completo</PrimaryButton>
           </a>
         </TextAndButton>
