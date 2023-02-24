@@ -81,6 +81,8 @@ export const TextAndButton = styled(motion.div)`
   gap: 20px;
 
   p {
+    margin: 10px 0;
+
     strong,
     a {
       font-weight: 500;
