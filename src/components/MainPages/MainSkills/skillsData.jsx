@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaVuejs } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
 
 //=====Start Primary Hard Skills=====
@@ -19,6 +19,11 @@ export const primaryHardSkillsData = [
     icon: <FaReact />,
     name: "React JS",
   },
+  {
+    icon: <FaVuejs />,
+    name: "VueJS",
+  },
+
 ];
 
 //=====Start Secondary Hard Skills=====
@@ -46,24 +51,7 @@ export const secondaryHardSkillsData = [
   },
   {
     name: "Figma",
-  },
-  {
-    name: "After Effects",
-  },
-  {
-    name: "Premire",
-  },
-  {
-    name: "Illustrator",
-  },
-
-  {
-    name: "Indesign",
-  },
-
-  {
-    name: "Photoshop",
-  },
+  }
 ];
 
 //=====Start Soft Skills=====
