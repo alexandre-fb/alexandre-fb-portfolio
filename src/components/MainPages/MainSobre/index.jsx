@@ -37,22 +37,20 @@ export const MainSobre = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.4 }}
         >
-          <p>
-            Bem-vindo(a) ao meu portfólio. Esse espaço tem o propósito de reunir
-            os últimos projetos que desenvolvi, bem como algumas informações
-            sobre mim.
-            <br />
-            <br />
-            Tenho como objetivo especializar-me na área de{" "}
-            <strong>desenvolvimento FrontEnd</strong>. Para isso venho
-            continuamente me capacitando e aplicando os conhecimentos adquiridos
-            em projetos pessoais e profissionais, utilizando as principais
-            tecnologias e ferramentas da área.
-            <br />
-            <br />
-            Disponibilizo no botão abaixo o meu currículo completo, onde pode
-            encontrar minhas experiências e formações profissionais.
-          </p>
+          <div>
+            <p>
+              Bem-vindo(a) ao meu portfólio. Esse espaço tem o propósito de reunir
+              os últimos projetos que desenvolvi, bem como algumas informações
+              sobre mim.
+            </p>
+            <p>
+              Atualmente trabalho como <strong>desenvolvedor FrontEnd</strong> no Grupo Plan Marketing, utilizando principalmente as tecnologias HTML, CSS, Sass, JS e Vue, em projetos feitos com Laravel.
+            </p>
+            <p>
+              Disponibilizo no botão abaixo o meu currículo completo, onde pode
+              encontrar minhas experiências e formações profissionais.
+            </p>
+          </div>
 
           <a href={curriculoFile} download>
             <PrimaryButton>Currículo completo</PrimaryButton>
