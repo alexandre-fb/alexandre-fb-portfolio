@@ -8,7 +8,7 @@ import {
 import { ProfileImage } from "../../profileData/ProfileImage";
 import { SocialLinks } from "../../linksIcons/SocialLinks";
 import { PrimaryButton } from "../../buttons/PrimaryButton";
-import curriculoFile from "../../../assets/pdfs/alexandre-bisognin-curriculo.pdf";
+import curriculoFile from "../../../assets/pdfs/alexandre-bisognin-curriculo-2023.pdf";
 
 export const MainSobre = () => {
   return (
