@@ -1,9 +1,25 @@
-import whereInTheWorldImage from "../../../assets/images/api-rest-coutries-project.png";
-import pokedexProjectImage from "../../../assets/images/pokedex-project.png";
-import portfolioProjectImage from "../../../assets/images/portfolio-project.png";
-import pesquisaGitHubProjectImage from "../../../assets/images/busca-api-github-project.png";
+import libVueImage from "../../../assets/images/lib-vue.webp";
+import whereInTheWorldImage from "../../../assets/images/api-rest-coutries-project.webp";
+import pokedexProjectImage from "../../../assets/images/pokedex-project.webp";
+import portfolioProjectImage from "../../../assets/images/portfolio-project.webp";
+import pesquisaGitHubProjectImage from "../../../assets/images/busca-api-github-project.webp";
 
 export const projectsData = [
+  {
+    title: "Biblioteca de componentes Vue.js",
+    image: libVueImage,
+    technologies: ["Html", "Css", "JavaScript", "VueJS", "Nuxt", "TailwidCSS"],
+    links: [
+      {
+        name: "Página",
+        link: "https://lib-vue.alexandrefb.com/",
+      },
+      {
+        name: "gitHub",
+        link: "https://github.com/alexandre-fb/lib-vuejs",
+      },
+    ],
+  },
   {
     title: "Where in the World?",
     image: whereInTheWorldImage,
