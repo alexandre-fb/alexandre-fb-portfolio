@@ -79,6 +79,7 @@ export const TextAndButton = styled(motion.div)`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  line-height: 1.6;
 
   p {
     margin: 10px 0;

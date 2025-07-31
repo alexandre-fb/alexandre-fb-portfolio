@@ -8,7 +8,7 @@ import {
 import { ProfileImage } from "../../profileData/ProfileImage";
 import { SocialLinks } from "../../linksIcons/SocialLinks";
 import { PrimaryButton } from "../../buttons/PrimaryButton";
-import curriculoFile from "../../../assets/pdfs/alexandre_bisognin_curriculo.pdf";
+import curriculoFile from "../../../assets/pdfs/alexandre-bisognin-curriculo.pdf";
 
 export const MainSobre = () => {
   return (
@@ -44,7 +44,7 @@ export const MainSobre = () => {
               sobre mim.
             </p>
             <p>
-              Atualmente trabalho como <strong>desenvolvedor FrontEnd</strong> no Grupo Plan Marketing, utilizando principalmente as tecnologias HTML, CSS, Sass, JS e Vue, em projetos feitos com Laravel.
+              Atuo como <strong>Desenvolvedor Front-End</strong>, contribuindo no desenvolvimento de interfaces, criação de componentes reutilizáveis e aprimoramento da experiência do usuário. Tenho experiência com frameworks modernos como Vue e React, e participação ativa em projetos de Design System.
             </p>
             <p>
               Disponibilizo no botão abaixo o meu currículo completo, onde pode
